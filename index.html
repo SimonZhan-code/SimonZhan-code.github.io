@@ -22,7 +22,7 @@
                 <name>Sinong(Simon) Zhan</name>
               </p>
               <p>
-                I am a 1st year PhD student of ECE department, Northwestern University advised by <a href="http://users.eecs.northwestern.edu/~qzhu/">Qi Zhu</a>, and I also work closely with <a href="https://zhaoranwang.github.io/">Zhaoran Wang</a> and <a href="https://chaohuang2018.github.io/main/">Chao Huang</a>. Before Northwestern, I did my undergad on Applied Math and Computer Science at UC Berkeley, where I was advised by <a href="http://people.eecs.berkeley.edu/~sseshia/">Sanjit A. Seshia</a>.      
+                I am a 1st year PhD student of ECE department, Northwestern University advised by <a href="http://users.eecs.northwestern.edu/~qzhu/">Qi Zhu</a>, and I also work closely with <a href="https://zhuoranyang.github.io/">Zhuoran Yang</a>, <a href="https://zhaoranwang.github.io/">Zhaoran Wang</a>, and <a href="https://chaohuang2018.github.io/main/">Chao Huang</a>. Before Northwestern, I did my undergad on Applied Math and Computer Science at UC Berkeley, where I was advised by <a href="http://people.eecs.berkeley.edu/~sseshia/">Sanjit A. Seshia</a>.      
                 I had experience on Ubiquitous Computing and Novel sensing and have been fortunately advised by <a href="https://www.cs.dartmouth.edu/~xingdong/">Xing-Dong Yang</a>, <a href="http://teng-han.com/">Teng Han</a>, and <a href="https://lcs.ios.ac.cn/~fengt/">Tian Feng</a>. 
               </p>
               <p>
@@ -59,146 +59,192 @@
           <table width="100%" align="center" border="0" cellspacing="0" cellpadding="20"><tbody>
             <tr>
               <td>
-                <heading>Selected Publications</heading>
-
-
-                <tr onmouseout="pixelsaferl_stop()" onmouseover="pixelsaferl_start()">
+                <heading>Publications</heading>
+                
+                <tr onmouseout="delayRL_stop()" onmouseover="delayRL_start()">
                   <td style="padding:20px;width:25%;vertical-align:middle">
                     <div class="one">
                       <div class="two" id='nerfsuper_image'><video  width=100% height=100% muted autoplay loop>
                       <source src="images/nerf_supervision.mp4" type="video/mp4">
                       Your browser does not support the video tag.
                       </video></div>
-                      <img src='images/PointGoal1.gif' width="160">
+                      <img src='images/adrl_v2.png' width="180">
                     </div>
                     <script type="text/javascript">
-                      function pixelsaferl_start() {
+                      function delayRL_start() {
                         document.getElementById('nerfsuper_image').style.opacity = "1";
                       }
       
-                      function pixelsaferl_stop() {
+                      function delayRL_stop() {
                         document.getElementById('nerfsuper_image').style.opacity = "0";
                       }
-                      pixelsaferl_stop()
+                      delayRL_stop()
                     </script>
                   </td>
                   <td style="padding:20px;width:75%;vertical-align:middle">
                     <!-- <a href="https://arxiv.org/abs/2209.15090"> -->
-                      <papertitle>State-wise Safe Reinforcement Learning With Pixel Observations</papertitle>
+                      <papertitle>Boosting Reinforcement Learning with Strongly Delayed Feedback
+                        Through Auxiliary Short Delays</papertitle>
                     </a>
                     <br>
+                    <a href="https://scholar.google.com/citations?user=CYfMzb8AAAAJ&hl=zh-CN">Qingyuan Wu</a>,
                     <strong>Simon Sinong Zhan</strong>,
                     <a href="https://wangyixu14.github.io/">Yixuan Wang</a>, 
-                    <a href="https://scholar.google.com/citations?user=CYfMzb8AAAAJ&hl=zh-CN">Qingyuan Wu</a>,
-                    <a href="http://zhulab.ece.northwestern.edu/people/ruochen.html">Ruochen Jiao</a>, 
-                    <a href="https://chaohuang2018.github.io/main/">Chao Huang</a>,
+                    <a href="https://www.csie.ntu.edu.tw/~cwlin/">Chung-Wei Lin</a>,
+                    <a href="https://lvchen.wixsite.com/automan">Chen Lv</a>, 
                     <a href="https://www.mccormick.northwestern.edu/research-faculty/directory/profiles/zhu-qi.html">Qi Zhu</a>,
+                    <a href="https://chaohuang2018.github.io/main/">Chao Huang</a>,
                     <br>
                     <em>In Submission</em>  
                     <br>
                     <!-- <a href="http://yenchenlin.me/nerf-supervision/">project page</a> /  -->
-                    <a href="http://arxiv.org/abs/2311.02227">arXiv</a> / 
-                    <a href="https://github.com/SimonZhan-code/Step-Wise_SafeRL_Pixel">code and demos</a> 
+                    <a href="https://arxiv.org/abs/2402.03141">arXiv</a> 
+                    <!-- <a href="https://github.com/SimonZhan-code/Step-Wise_SafeRL_Pixel">code and demos</a>  -->
                     <p></p>
-                    <p>In this paper, we propose a novel pixel-observation safe RL algorithm that efficiently encodes state-wise safety constraints with unknown hazard regions through the introduction of a latent barrier function learning mechanism. 
-
+                    <p>
+                      Auxiliary-Delayed Reinforcement Learning (AD-RL) leverages an auxiliary short-delayed task to accelerate the learning on a long-delayed task without compromising the performance in stochastic environments. 
                     </p>
                   </td>
                 </tr>        
 
 
-          <tr onmouseout="nerfsuper_stop()" onmouseover="nerfsuper_start()">
-            <td style="padding:20px;width:25%;vertical-align:middle">
-              <div class="one">
-                <div class="two" id='nerfsuper_image'><video  width=100% height=100% muted autoplay loop>
-                <source src="images/nerf_supervision.mp4" type="video/mp4">
-                Your browser does not support the video tag.
-                </video></div>
-                <img src='images/safeRL.jpg' width="160">
-              </div>
-              <script type="text/javascript">
-                function nerfsuper_start() {
-                  document.getElementById('nerfsuper_image').style.opacity = "1";
-                }
+                <tr onmouseout="pixelsaferl_stop()" onmouseover="pixelsaferl_start()">
+                        <td style="padding:20px;width:25%;vertical-align:middle">
+                          <div class="one">
+                            <div class="two" id='nerfsuper_image'><video  width=100% height=100% muted autoplay loop>
+                            <source src="images/nerf_supervision.mp4" type="video/mp4">
+                            Your browser does not support the video tag.
+                            </video></div>
+                            <img src='images/PointGoal1.gif' width="160">
+                          </div>
+                          <script type="text/javascript">
+                            function pixelsaferl_start() {
+                              document.getElementById('nerfsuper_image').style.opacity = "1";
+                            }
+            
+                            function pixelsaferl_stop() {
+                              document.getElementById('nerfsuper_image').style.opacity = "0";
+                            }
+                            pixelsaferl_stop()
+                          </script>
+                        </td>
+                        <td style="padding:20px;width:75%;vertical-align:middle">
+                          <!-- <a href="https://arxiv.org/abs/2209.15090"> -->
+                            <papertitle>State-wise Safe Reinforcement Learning With Pixel Observations</papertitle>
+                          </a>
+                          <br>
+                          <strong>Simon Sinong Zhan</strong>,
+                          <a href="https://wangyixu14.github.io/">Yixuan Wang</a>, 
+                          <a href="https://scholar.google.com/citations?user=CYfMzb8AAAAJ&hl=zh-CN">Qingyuan Wu</a>,
+                          <a href="http://zhulab.ece.northwestern.edu/people/ruochen.html">Ruochen Jiao</a>, 
+                          <a href="https://chaohuang2018.github.io/main/">Chao Huang</a>,
+                          <a href="https://www.mccormick.northwestern.edu/research-faculty/directory/profiles/zhu-qi.html">Qi Zhu</a>,
+                          <br>
+                          <em>In Submission</em>  
+                          <br>
+                          <!-- <a href="http://yenchenlin.me/nerf-supervision/">project page</a> /  -->
+                          <a href="http://arxiv.org/abs/2311.02227">arXiv</a> / 
+                          <a href="https://github.com/SimonZhan-code/Step-Wise_SafeRL_Pixel">code and demos</a> 
+                          <p></p>
+                          <p>In this paper, we propose a novel pixel-observation safe RL algorithm that efficiently encodes state-wise safety constraints with unknown hazard regions through the introduction of a latent barrier function learning mechanism. 
 
-                function nerfsuper_stop() {
-                  document.getElementById('nerfsuper_image').style.opacity = "0";
-                }
-                nerfsuper_stop()
-              </script>
-            </td>
-            <td style="padding:20px;width:75%;vertical-align:middle">
-              <!-- <a href="https://arxiv.org/abs/2209.15090"> -->
-                <papertitle>Enforcing Hard Constraints with Soft Barriers: Safe Reinforcement Learning in Unknown Stochastic Environments</papertitle>
-              </a>
-              <br>
-              <a href="https://wangyixu14.github.io/">Yixuan Wang</a>, 
-              <strong>Simon Sinong Zhan</strong>,  
-              <a href="http://zhulab.ece.northwestern.edu/people/ruochen.html">Ruochen Jiao</a>, 
-              <a href="https://scholar.google.com/citations?user=CDBdqesAAAAJ&hl=en">Zhilu Wang</a>,
-              <a href="https://wanxinjin.github.io/">Wanxin Jin</a>,
-              <a href="https://www.princeton.edu/~zy6/">Zhuoran Yang</a>,
-              <a href="https://zhaoranwang.github.io/">Zhaoran Wang</a>,
-              <a href="https://chaohuang2018.github.io/main/">Chao Huang</a>,
-              <a href="https://www.mccormick.northwestern.edu/research-faculty/directory/profiles/zhu-qi.html">Qi Zhu</a>,
-              <br>
-              <em>ICML 2023</em>  
-              <br>
-							<!-- <a href="http://yenchenlin.me/nerf-supervision/">project page</a> /  -->
-							<a href="https://arxiv.org/abs/2209.15090">arXiv</a> / 
-							<!-- <a href="https://www.youtube.com/watch?v=_zN-wVwPH1s">video</a> / -->
-							<a href="https://github.com/wangyixu14/safe_unknown_control">code</a> 
-							<!-- <a href="https://colab.research.google.com/drive/13ISri5KD2XeEtsFs25hmZtKhxoDywB5y?usp=sharing">colab</a>				 -->
-              <p></p>
-              <p>A safe RL approach that can jointly learn the environment and optimize the control policy, while effectively avoiding unsafe regions with safety probability optimization.</p>
-            </td>
-          </tr>
-           
-          <tr onmouseout="iccps2023super_stop()" onmouseover="iccps2023super_start()">
-            <td style="padding:20px;width:25%;vertical-align:middle">
-              <div class="one">
-                <div class="two" id='nerfsuper_image'><video  width=100% height=100% muted autoplay loop>
-                <source src="images/nerf_supervision.mp4" type="video/mp4">
-                Your browser does not support the video tag.
-                </video></div>
-                <img src='images/AttControl.gif' width="160">
-              </div>
-              <script type="text/javascript">
-                function iccps2023super_start() {
-                  document.getElementById('nerfsuper_image').style.opacity = "1";
-                }
+                          </p>
+                        </td>
+                </tr>        
 
-                function iccps2023super_stop() {
-                  document.getElementById('nerfsuper_image').style.opacity = "0";
-                }
-                iccps2023super_stop()
-              </script>
-            </td>
-            <td style="padding:20px;width:75%;vertical-align:middle">
-              <!-- <a href="https://arxiv.org/abs/2201.12243"> -->
-              <a href="https://dl.acm.org/doi/10.1145/3576841.3585919">
-                <papertitle>Joint Differentiable Optimization and Verification for Certified Reinforcement Learning</papertitle>
-              </a>
-              <br>
-              <a href="https://wangyixu14.github.io/">Yixuan Wang*</a>, 
-              <strong>Simon Sinong Zhan*</strong>,  
-              <a href="https://scholar.google.com/citations?user=CDBdqesAAAAJ&hl=en">Zhilu Wang</a>,
-              <a href="https://chaohuang2018.github.io/main/">Chao Huang</a>,
-              <a href="https://zhaoranwang.github.io/">Zhaoran Wang</a>,
-              <a href="https://www.princeton.edu/~zy6/">Zhuoran Yang</a>,
-              <a href="https://www.mccormick.northwestern.edu/research-faculty/directory/profiles/zhu-qi.html">Qi Zhu</a>,
-              <br>
-              <em>ICCPS 2023</em> 
-              <br>
-							<!-- <a href="http://yenchenlin.me/nerf-supervision/">project page</a> /  -->
-							<a href="https://arxiv.org/abs/2201.12243">arXiv</a> / 
-							<!-- <a href="https://www.youtube.com/watch?v=_zN-wVwPH1s">video</a> / -->
-							<a href="https://github.com/SimonZhan-code/Certified-RL-LP">code</a> 
-							<!-- <a href="https://colab.research.google.com/drive/13ISri5KD2XeEtsFs25hmZtKhxoDywB5y?usp=sharing">colab</a>				 -->
-              <p></p>
-              <p>A framework that jointly conducts reinforcement learning and formal verification by formulating and solving a novel bilevel optimization problem, which is end-to-end differentiable by the gradients from the value function and certificates formulated by linear programs and semi-definite programs.</p>
-            </td>
-          </tr>
+
+                <tr onmouseout="nerfsuper_stop()" onmouseover="nerfsuper_start()">
+                  <td style="padding:20px;width:25%;vertical-align:middle">
+                    <div class="one">
+                      <div class="two" id='nerfsuper_image'><video  width=100% height=100% muted autoplay loop>
+                      <source src="images/nerf_supervision.mp4" type="video/mp4">
+                      Your browser does not support the video tag.
+                      </video></div>
+                      <img src='images/safeRL.jpg' width="160">
+                    </div>
+                    <script type="text/javascript">
+                      function nerfsuper_start() {
+                        document.getElementById('nerfsuper_image').style.opacity = "1";
+                      }
+
+                      function nerfsuper_stop() {
+                        document.getElementById('nerfsuper_image').style.opacity = "0";
+                      }
+                      nerfsuper_stop()
+                    </script>
+                  </td>
+                  <td style="padding:20px;width:75%;vertical-align:middle">
+                    <!-- <a href="https://arxiv.org/abs/2209.15090"> -->
+                      <papertitle>Enforcing Hard Constraints with Soft Barriers: Safe Reinforcement Learning in Unknown Stochastic Environments</papertitle>
+                    </a>
+                    <br>
+                    <a href="https://wangyixu14.github.io/">Yixuan Wang</a>, 
+                    <strong>Simon Sinong Zhan</strong>,  
+                    <a href="http://zhulab.ece.northwestern.edu/people/ruochen.html">Ruochen Jiao</a>, 
+                    <a href="https://scholar.google.com/citations?user=CDBdqesAAAAJ&hl=en">Zhilu Wang</a>,
+                    <a href="https://wanxinjin.github.io/">Wanxin Jin</a>,
+                    <a href="https://www.princeton.edu/~zy6/">Zhuoran Yang</a>,
+                    <a href="https://zhaoranwang.github.io/">Zhaoran Wang</a>,
+                    <a href="https://chaohuang2018.github.io/main/">Chao Huang</a>,
+                    <a href="https://www.mccormick.northwestern.edu/research-faculty/directory/profiles/zhu-qi.html">Qi Zhu</a>,
+                    <br>
+                    <em>ICML 2023</em>  
+                    <br>
+                    <!-- <a href="http://yenchenlin.me/nerf-supervision/">project page</a> /  -->
+                    <a href="https://arxiv.org/abs/2209.15090">arXiv</a> / 
+                    <!-- <a href="https://www.youtube.com/watch?v=_zN-wVwPH1s">video</a> / -->
+                    <a href="https://github.com/wangyixu14/safe_unknown_control">code</a> 
+                    <!-- <a href="https://colab.research.google.com/drive/13ISri5KD2XeEtsFs25hmZtKhxoDywB5y?usp=sharing">colab</a>				 -->
+                    <p></p>
+                    <p>A safe RL approach that can jointly learn the environment and optimize the control policy, while effectively avoiding unsafe regions with safety probability optimization.</p>
+                  </td>
+                </tr>
+                
+                <tr onmouseout="iccps2023super_stop()" onmouseover="iccps2023super_start()">
+                  <td style="padding:20px;width:25%;vertical-align:middle">
+                    <div class="one">
+                      <div class="two" id='nerfsuper_image'><video  width=100% height=100% muted autoplay loop>
+                      <source src="images/nerf_supervision.mp4" type="video/mp4">
+                      Your browser does not support the video tag.
+                      </video></div>
+                      <img src='images/AttControl.gif' width="160">
+                    </div>
+                    <script type="text/javascript">
+                      function iccps2023super_start() {
+                        document.getElementById('nerfsuper_image').style.opacity = "1";
+                      }
+
+                      function iccps2023super_stop() {
+                        document.getElementById('nerfsuper_image').style.opacity = "0";
+                      }
+                      iccps2023super_stop()
+                    </script>
+                  </td>
+                  <td style="padding:20px;width:75%;vertical-align:middle">
+                    <!-- <a href="https://arxiv.org/abs/2201.12243"> -->
+                    <a href="https://dl.acm.org/doi/10.1145/3576841.3585919">
+                      <papertitle>Joint Differentiable Optimization and Verification for Certified Reinforcement Learning</papertitle>
+                    </a>
+                    <br>
+                    <a href="https://wangyixu14.github.io/">Yixuan Wang*</a>, 
+                    <strong>Simon Sinong Zhan*</strong>,  
+                    <a href="https://scholar.google.com/citations?user=CDBdqesAAAAJ&hl=en">Zhilu Wang</a>,
+                    <a href="https://chaohuang2018.github.io/main/">Chao Huang</a>,
+                    <a href="https://zhaoranwang.github.io/">Zhaoran Wang</a>,
+                    <a href="https://www.princeton.edu/~zy6/">Zhuoran Yang</a>,
+                    <a href="https://www.mccormick.northwestern.edu/research-faculty/directory/profiles/zhu-qi.html">Qi Zhu</a>,
+                    <br>
+                    <em>ICCPS 2023</em> 
+                    <br>
+                    <!-- <a href="http://yenchenlin.me/nerf-supervision/">project page</a> /  -->
+                    <a href="https://arxiv.org/abs/2201.12243">arXiv</a> / 
+                    <!-- <a href="https://www.youtube.com/watch?v=_zN-wVwPH1s">video</a> / -->
+                    <a href="https://github.com/SimonZhan-code/Certified-RL-LP">code</a> 
+                    <!-- <a href="https://colab.research.google.com/drive/13ISri5KD2XeEtsFs25hmZtKhxoDywB5y?usp=sharing">colab</a>				 -->
+                    <p></p>
+                    <p>A framework that jointly conducts reinforcement learning and formal verification by formulating and solving a novel bilevel optimization problem, which is end-to-end differentiable by the gradients from the value function and certificates formulated by linear programs and semi-definite programs.</p>
+                  </td>
+                </tr>
    
               </td>
             </tr>
