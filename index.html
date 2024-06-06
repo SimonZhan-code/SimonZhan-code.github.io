@@ -58,12 +58,63 @@
       
       </tbody></table>
         <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
-
+  
           <table width="100%" align="center" border="0" cellspacing="0" cellpadding="20"><tbody>
             <tr>
               <td>
                 <heading>Publications</heading>
                 
+                <tr onmouseout="VardelayRL_stop()" onmouseover="VardelayRL_start()">
+                  <td style="padding:20px;width:25%;vertical-align:middle">
+                    <div class="one">
+                      <div class="two" id='nerfsuper_image'><video  width=100% height=100% muted autoplay loop>
+                      <source src="images/nerf_supervision.mp4" type="video/mp4">
+                      Your browser does not support the video tag.
+                      </video></div>
+                      <img src='images/vdpo_v2.png' width="180">
+                    </div>
+                    <script type="text/javascript">
+                      function VardelayRL_start() {
+                        document.getElementById('nerfsuper_image').style.opacity = "1";
+                      }
+      
+                      function VardelayRL_stop() {
+                        document.getElementById('nerfsuper_image').style.opacity = "0";
+                      }
+                      VardelayRL_stop()
+                    </script>
+                  </td>
+                  <td style="padding:20px;width:75%;vertical-align:middle">
+                    <!-- <a href="https://arxiv.org/abs/2209.15090"> -->
+                      <papertitle>Variational Delayed Policy Optimization</papertitle>
+                    </a>
+                    <br>
+                    <a href="https://scholar.google.com/citations?user=CYfMzb8AAAAJ&hl=zh-CN">Qingyuan Wu</a>,
+                    <strong>Simon Sinong Zhan</strong>,
+                    <a href="https://wangyixu14.github.io/">Yixuan Wang</a>, 
+                    <a href="https://wangyuhuix.github.io/">Yuhui Wang</a>,
+                    <a href="https://www.csie.ntu.edu.tw/~cwlin/">Chung-Wei Lin</a>,
+                    <a href="https://lvchen.wixsite.com/automan">Chen Lv</a>, 
+                    <a href="https://www.mccormick.northwestern.edu/research-faculty/directory/profiles/zhu-qi.html">Qi Zhu</a>,
+                    <a href="https://chaohuang2018.github.io/main/">Chao Huang</a>,
+                    <br>
+                    <em>In Submission</em>  
+                    <br>
+                    <!-- <a href="http://yenchenlin.me/nerf-supervision/">project page</a> /  -->
+                    <a href="https://arxiv.org/pdf/2405.14226">arXiv</a> 
+                    <!-- <a href="https://github.com/SimonZhan-code/Step-Wise_SafeRL_Pixel">code and demos</a>  -->
+                    <p></p>
+                    <p>
+                      Variational Delayed Policy Optimization (VDPO) reformulates delayed RL as a variational inference problem, 
+                      which is further modelled as a two-step iterative optimization problem, where the
+                      first step is TD learning in the delay-free environment with a small state space, and
+                      the second step is behaviour cloning which can be addressed much more efficiently
+                      than TD learning.                    
+                    </p>
+                  </td>
+                </tr>      
+
+
                 <tr onmouseout="delayRL_stop()" onmouseover="delayRL_start()">
                   <td style="padding:20px;width:25%;vertical-align:middle">
                     <div class="one">
@@ -93,9 +144,11 @@
                     <a href="https://scholar.google.com/citations?user=CYfMzb8AAAAJ&hl=zh-CN">Qingyuan Wu</a>,
                     <strong>Simon Sinong Zhan</strong>,
                     <a href="https://wangyixu14.github.io/">Yixuan Wang</a>, 
+                    <a href="https://wangyuhuix.github.io/">Yuhui Wang</a>,
                     <a href="https://www.csie.ntu.edu.tw/~cwlin/">Chung-Wei Lin</a>,
                     <a href="https://lvchen.wixsite.com/automan">Chen Lv</a>, 
                     <a href="https://www.mccormick.northwestern.edu/research-faculty/directory/profiles/zhu-qi.html">Qi Zhu</a>,
+                    <a href="https://people.idsia.ch/~juergen/">Jürgen Schmidhuber</a>,
                     <a href="https://chaohuang2018.github.io/main/">Chao Huang</a>,
                     <br>
                     <em>ICML 2024</em>  
