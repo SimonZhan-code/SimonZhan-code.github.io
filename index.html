@@ -70,6 +70,52 @@
               <td>
                 <heading>Publications</heading>
                 
+                <tr onmouseout="MEAIRL_stop()" onmouseover="MEAIRL_start()">
+                  <td style="padding:20px;width:25%;vertical-align:middle">
+                    <div class="one">
+                      <div class="two" id='nerfsuper_image'><video  width=100% height=100% muted autoplay loop>
+                      <source src="images/nerf_supervision.mp4" type="video/mp4">
+                      Your browser does not support the video tag.
+                      </video></div>
+                      <img src='images/MEAIRL_overall_figuare.jpg' width="180">
+                    </div>
+                    <script type="text/javascript">
+                      function MEAIRL_start() {
+                        document.getElementById('nerfsuper_image').style.opacity = "1";
+                      }
+      
+                      function MEAIRL_stop() {
+                        document.getElementById('nerfsuper_image').style.opacity = "0";
+                      }
+                      MEAIRL_stop()
+                    </script>
+                  </td>
+                  <td style="padding:20px;width:75%;vertical-align:middle">
+                    <!-- <a href="https://arxiv.org/abs/2209.15090"> -->
+                      <papertitle>Model-Based Reward Shaping for Adversarial Inverse Reinforcement Learning in Stochas-
+                        tic Environments</papertitle>
+                    </a>
+                    <br>
+                    <strong>Simon Sinong Zhan</strong>,
+                    <a href="https://scholar.google.com/citations?user=CYfMzb8AAAAJ&hl=zh-CN">Qingyuan Wu</a>,
+                    <a href="https://www.linkedin.com/in/philip-wang-a3919a270/">Philip Wang</a>, 
+                    <a href="https://wangyixu14.github.io/">Yixuan Wang</a>,
+                    <a href="http://zhulab.ece.northwestern.edu/people/ruochen.html">Ruochen Jiao</a>, 
+                    <a href="https://chaohuang2018.github.io/main/">Chao Huang</a>,
+                    <a href="https://www.mccormick.northwestern.edu/research-faculty/directory/profiles/zhu-qi.html">Qi Zhu</a>,
+                    <br>
+                    <em>In Submission</em>  
+                    <br>
+                    <!-- <a href="https://arxiv.org/pdf/2405.14226">arXiv</a>  -->
+                    <p></p>
+                    <p>
+                      Our project introduces a model-based adversarial Inverse Reinforcement Learning framework that enhances performance in stochastic environments by incorporating transition dynamics into reward shaping, significantly improving sample efficiency and robustness compared to traditional approaches.                  
+                    </p>
+                  </td>
+                </tr>
+
+
+
                 <tr onmouseout="VardelayRL_stop()" onmouseover="VardelayRL_start()">
                   <td style="padding:20px;width:25%;vertical-align:middle">
                     <div class="one">
@@ -486,8 +532,9 @@
           <tr>
             <td>
               <heading>Service</heading>
-              <li> 2024: external reviewer <em>ASP-DAC 2024</em>; Artifact Evaluation PC <em>ICCPS 2024</em></li>
-              <li> 2023: reviewer <em>Neurips 2023</em></li>
+              <p> 
+                I have served as a reviewer for ICLR, NeurIPS, and ICML, as well as an external reviewer for DAC, ASP-DAC, and CAV. Additionally, I have been a Program Committee member for Artifact Evaluation at ICCPS. 
+              </p>
             </td>
           </tr>
         </tbody></table>
