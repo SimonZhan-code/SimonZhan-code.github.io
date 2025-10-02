@@ -13,7 +13,7 @@ title                    : "Home"
 title_separator          : "-"
 name                     : &name "Simon Zhan"
 description              : &description "PhD student at Northwestern University working on safe reinforcement learning and cyber-physical systems"   
-url                      : https://simon-zhan.com/ # The base hostname & protocol for your site
+url                      : https://simonzhan-code.github.io # The base hostname & protocol for your site
 baseurl                  : "" # the subpath of your site, e.g. "/blog"
 repository               : "SimonZhan-code/SimonZhan-code.github.io"
 
