@@ -204,69 +204,69 @@ HOMEPAGE SPECIFIC STYLES
   font-size: 0.9em;
 }
 
-/* Color coding for different link types */
-.pub-link:has(i.fa-file-pdf) {
+/* Color coding for different link types - GitHub Pages compatible version */
+.pub-link.pdf-link {
   background: #e74c3c;
 }
 
-.pub-link:has(i.fa-file-pdf):hover {
+.pub-link.pdf-link:hover {
   background: #c0392b;
 }
 
-.pub-link:has(i.fa-code) {
+.pub-link.code-link {
   background: #2ecc71;
 }
 
-.pub-link:has(i.fa-code):hover {
+.pub-link.code-link:hover {
   background: #27ae60;
 }
 
-.pub-link:has(i.fa-presentation, i.fa-file-powerpoint) {
+.pub-link.slides-link {
   background: #f39c12;
 }
 
-.pub-link:has(i.fa-presentation, i.fa-file-powerpoint):hover {
+.pub-link.slides-link:hover {
   background: #e67e22;
 }
 
-.pub-link:has(i.fa-globe, i.fa-external-link-alt) {
+.pub-link.project-link {
   background: #3498db;
 }
 
-.pub-link:has(i.fa-globe, i.fa-external-link-alt):hover {
+.pub-link.project-link:hover {
   background: #2980b9;
 }
 
-.pub-link:has(i.fa-video) {
+.pub-link.video-link {
   background: #9b59b6;
 }
 
-.pub-link:has(i.fa-video):hover {
+.pub-link.video-link:hover {
   background: #8e44ad;
 }
 
-.pub-link:has(i.fa-database) {
-  background: #34495e;
-}
-
-.pub-link:has(i.fa-database):hover {
-  background: #2c3e50;
-}
-
-.pub-link:has(i.fa-image) {
+.pub-link.poster-link {
   background: #e67e22;
 }
 
-.pub-link:has(i.fa-image):hover {
+.pub-link.poster-link:hover {
   background: #d35400;
 }
 
-.pub-link:has(i.fa-quote-right) {
+.pub-link.bibtex-link {
   background: #95a5a6;
 }
 
-.pub-link:has(i.fa-quote-right):hover {
+.pub-link.bibtex-link:hover {
   background: #7f8c8d;
+}
+
+.pub-link.database-link {
+  background: #34495e;
+}
+
+.pub-link.database-link:hover {
+  background: #2c3e50;
 }
 
 /* Responsive design for mobile */

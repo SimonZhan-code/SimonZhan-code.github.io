@@ -73,10 +73,10 @@ My research lies at the intersection of Reinforcement Learning and Formal Method
       Variational Delayed Policy Optimization (VDPO) reformulates delayed RL as a variational inference problem, solved through a two-step iterative optimization process with TD learning and behavior cloning.
     </div>
     <div class="publication-links">
-      <a href="https://arxiv.org/pdf/2405.14226" class="pub-link">
+      <a href="https://arxiv.org/pdf/2405.14226" class="pub-link pdf-link">
         <i class="fas fa-file-pdf"></i> Paper
       </a>
-      <a href="https://github.com/QingyuanWuNothing/VDPO" class="pub-link">
+      <a href="https://github.com/QingyuanWuNothing/VDPO" class="pub-link code-link">
         <i class="fas fa-code"></i> Code
       </a>
     </div>
@@ -96,10 +96,10 @@ My research lies at the intersection of Reinforcement Learning and Formal Method
       A safe RL approach that can jointly learn the environment and optimize the control policy, while effectively avoiding unsafe regions with safety probability optimization using soft barriers to enforce hard safety constraints.
     </div>
     <div class="publication-links">
-      <a href="https://arxiv.org/abs/2209.15090" class="pub-link">
+      <a href="https://arxiv.org/abs/2209.15090" class="pub-link pdf-link">
         <i class="fas fa-file-pdf"></i> Paper
       </a>
-      <a href="https://github.com/wangyixu14/safe_unknown_control" class="pub-link">
+      <a href="https://github.com/wangyixu14/safe_unknown_control" class="pub-link code-link">
         <i class="fas fa-code"></i> Code
       </a>
     </div>
@@ -119,10 +119,10 @@ My research lies at the intersection of Reinforcement Learning and Formal Method
       A framework that jointly conducts reinforcement learning and formal verification by formulating and solving a novel bilevel optimization problem, which is end-to-end differentiable through gradients from the value function and certificates formulated by linear programs and semi-definite programs.
     </div>
     <div class="publication-links">
-      <a href="https://arxiv.org/abs/2201.12243" class="pub-link">
+      <a href="https://arxiv.org/abs/2201.12243" class="pub-link pdf-link">
         <i class="fas fa-file-pdf"></i> Paper
       </a>
-      <a href="https://github.com/SimonZhan-code/Certified-RL-LP" class="pub-link">
+      <a href="https://github.com/SimonZhan-code/Certified-RL-LP" class="pub-link code-link">
         <i class="fas fa-code"></i> Code
       </a>
     </div>
