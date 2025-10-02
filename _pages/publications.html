@@ -1,0 +1,519 @@
+---
+layout: archive
+title: "Publications"
+permalink: /publications/
+author_profile: true
+---
+
+{% if site.author.googlescholar %}
+  <div class="wordwrap">For detailed full list of my articles, please visit <a href="{{site.author.googlescholar}}">my Google Scholar profile</a>.</div>
+{% endif %}
+
+{% include base_path %}
+
+<div class="publications-page">
+  <!-- New style rendering if publication categories are defined -->
+  {% if site.publication_category %}
+    {% for category in site.publication_category  %}
+      {% assign title_shown = false %}
+      {% assign has_publications = false %}
+      
+      <!-- Check if category has publications -->
+      {% for post in site.publications reversed %}
+        {% if post.category == category[0] %}
+          {% assign has_publications = true %}
+          {% break %}
+        {% endif %}
+      {% endfor %}
+      
+      {% if has_publications %}
+        {% unless title_shown %}
+          <div class="category-section">
+            <h2 class="category-title">{{ category[1].title }}</h2>
+            <div class="publications-grid">
+        {% endunless %}
+        
+        {% for post in site.publications reversed %}
+          {% if post.category != category[0] %}
+            {% continue %}
+          {% endif %}
+          
+          {% assign title_shown = true %}
+          
+          <div class="publication-item">
+            <div class="publication-header">
+              <h3 class="publication-title">
+                <a href="{{ post.url | prepend: base_path }}">{{ post.title }}</a>
+              </h3>
+              <div class="publication-date">{{ post.date | date: "%Y" }}</div>
+            </div>
+            
+            <div class="publication-venue">
+              {{ post.venue }}
+              {% if post.collection == 'publications' and post.category == 'conferences' %}
+                {% if post.excerpt contains 'Spotlight' or post.title contains 'Spotlight' %}
+                  <span class="spotlight-badge">Spotlight</span>
+                {% endif %}
+              {% endif %}
+            </div>
+            
+            {% if post.excerpt %}
+              <div class="publication-description">
+                {{ post.excerpt | markdownify | remove: '<p>' | remove: '</p>' }}
+              </div>
+            {% endif %}
+            
+            <div class="publication-links">
+              {% if post.paperurl %}
+                <a href="{{ post.paperurl }}" class="pub-link">
+                  <i class="fas fa-file-pdf"></i> Paper
+                </a>
+              {% endif %}
+              
+              {% if post.codeurl %}
+                <a href="{{ post.codeurl }}" class="pub-link">
+                  <i class="fas fa-code"></i> Code
+                </a>
+              {% endif %}
+              
+              {% if post.slidesurl %}
+                <a href="{{ post.slidesurl }}" class="pub-link">
+                  <i class="fas fa-presentation"></i> Slides
+                </a>
+              {% endif %}
+              
+              {% if post.projecturl %}
+                <a href="{{ post.projecturl }}" class="pub-link">
+                  <i class="fas fa-globe"></i> Project
+                </a>
+              {% endif %}
+              
+              {% if post.videourl %}
+                <a href="{{ post.videourl }}" class="pub-link">
+                  <i class="fas fa-video"></i> Video
+                </a>
+              {% endif %}
+              
+              {% if post.posterurl %}
+                <a href="{{ post.posterurl }}" class="pub-link">
+                  <i class="fas fa-image"></i> Poster
+                </a>
+              {% endif %}
+              
+              {% if post.bibtexurl %}
+                <a href="{{ post.bibtexurl }}" class="pub-link">
+                  <i class="fas fa-quote-right"></i> BibTeX
+                </a>
+              {% else %}
+                <!-- Auto-generate Google Scholar BibTeX link -->
+                <a href="https://scholar.google.com/scholar?q={{ post.title | url_encode }}" target="_blank" class="pub-link">
+                  <i class="fas fa-quote-right"></i> BibTeX
+                </a>
+              {% endif %}
+              
+              {% if post.supplementurl %}
+                <a href="{{ post.supplementurl }}" class="pub-link">
+                  <i class="fas fa-file-alt"></i> Supplement
+                </a>
+              {% endif %}
+            </div>
+          </div>
+        {% endfor %}
+        
+        {% if title_shown %}
+            </div>
+          </div>
+        {% endif %}
+      {% endif %}
+    {% endfor %}
+  {% else %}
+    <!-- Fallback rendering without categories -->
+    <div class="publications-grid">
+      {% for post in site.publications reversed %}
+        <div class="publication-item">
+          <div class="publication-header">
+            <h3 class="publication-title">
+              <a href="{{ post.url | prepend: base_path }}">{{ post.title }}</a>
+            </h3>
+            <div class="publication-date">{{ post.date | date: "%Y" }}</div>
+          </div>
+          
+          <div class="publication-venue">{{ post.venue }}</div>
+          
+          {% if post.excerpt %}
+            <div class="publication-description">
+              {{ post.excerpt | markdownify | remove: '<p>' | remove: '</p>' }}
+            </div>
+          {% endif %}
+          
+          <div class="publication-links">
+            {% if post.paperurl %}
+              <a href="{{ post.paperurl }}" class="pub-link">
+                <i class="fas fa-file-pdf"></i> Paper
+              </a>
+            {% endif %}
+            
+            {% if post.codeurl %}
+              <a href="{{ post.codeurl }}" class="pub-link">
+                <i class="fas fa-code"></i> Code
+              </a>
+            {% endif %}
+            
+            {% if post.slidesurl %}
+              <a href="{{ post.slidesurl }}" class="pub-link">
+                <i class="fas fa-presentation"></i> Slides
+              </a>
+            {% endif %}
+            
+            {% if post.projecturl %}
+              <a href="{{ post.projecturl }}" class="pub-link">
+                <i class="fas fa-globe"></i> Project
+              </a>
+            {% endif %}
+            
+            {% if post.videourl %}
+              <a href="{{ post.videourl }}" class="pub-link">
+                <i class="fas fa-video"></i> Video
+              </a>
+            {% endif %}
+            
+            {% if post.posterurl %}
+              <a href="{{ post.posterurl }}" class="pub-link">
+                <i class="fas fa-image"></i> Poster
+              </a>
+            {% endif %}
+            
+            {% if post.bibtexurl %}
+              <a href="{{ post.bibtexurl }}" class="pub-link">
+                <i class="fas fa-quote-right"></i> BibTeX
+              </a>
+            {% else %}
+              <!-- Auto-generate Google Scholar BibTeX link -->
+              <a href="https://scholar.google.com/scholar?q={{ post.title | url_encode }}" target="_blank" class="pub-link">
+                <i class="fas fa-quote-right"></i> BibTeX
+              </a>
+            {% endif %}
+          </div>
+        </div>
+      {% endfor %}
+    </div>
+  {% endif %}
+</div>
+
+<style>
+/*
+====================
+PUBLICATIONS PAGE STYLING
+====================
+
+This styling system matches the Selected Publications section from the homepage
+and supports automatic icon generation and color coding for different link types.
+
+SUPPORTED LINK TYPES (add these to your publication .md front matter):
+- paperurl: Paper links (Red - #e74c3c)
+- codeurl: Code repository links (Green - #2ecc71)  
+- slidesurl: Presentation slides (Orange - #f39c12)
+- projecturl: Project websites (Blue - #3498db)
+- videourl: Video content (Purple - #9b59b6)
+- posterurl: Poster files (Orange - #e67e22)
+- bibtexurl: BibTeX files (Light Gray - #95a5a6)
+- supplementurl: Supplementary materials (Default color)
+
+ICONS USED:
+- fa-file-pdf: Papers
+- fa-code: Code repositories
+- fa-presentation: Slides/presentations
+- fa-globe: Project websites
+- fa-video: Videos
+- fa-image: Posters
+- fa-quote-right: BibTeX
+- fa-file-alt: Supplementary materials
+*/
+
+.publications-page {
+  margin: 0;
+  padding: 0;
+}
+
+.category-section {
+  margin-bottom: 3em;
+}
+
+.category-title {
+  font-size: 1.8em;
+  font-weight: 700;
+  color: var(--global-text-color);
+  margin-bottom: 1em;
+  padding-bottom: 0.5em;
+  border-bottom: 2px solid var(--global-primary-color);
+}
+
+.publications-grid {
+  display: grid;
+  gap: 1.5em;
+}
+
+.publication-item {
+  background: var(--global-background-color);
+  border: 1px solid var(--global-border-color);
+  border-radius: 8px;
+  padding: 24px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+  position: relative;
+}
+
+.publication-item:hover {
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  transform: translateY(-2px);
+  border-color: var(--global-primary-color);
+}
+
+.publication-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 12px;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.publication-title {
+  margin: 0;
+  font-size: 1.2em;
+  font-weight: 600;
+  line-height: 1.3;
+  flex: 1;
+  min-width: 300px;
+}
+
+.publication-title a {
+  color: var(--global-text-color);
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+.publication-title a:hover {
+  color: var(--global-link-color);
+  text-decoration: underline;
+}
+
+.publication-venue {
+  font-weight: 600;
+  color: var(--global-primary-color);
+  font-size: 0.95em;
+  margin-bottom: 8px;
+  display: block;
+}
+
+.publication-date {
+  background: #2c3e50; /* Dark blue-gray that works on both themes */
+  color: white;
+  padding: 6px 12px;
+  border-radius: 6px;
+  font-size: 0.9em;
+  font-weight: 700;
+  white-space: nowrap;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  border: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.spotlight-badge {
+  background: #ff6b6b;
+  color: white;
+  padding: 2px 8px;
+  border-radius: 12px;
+  font-size: 0.8em;
+  font-weight: 500;
+  margin-left: 8px;
+  display: inline-block;
+}
+
+.publication-description {
+  color: var(--global-text-color);
+  font-size: 0.95em;
+  line-height: 1.5;
+  margin: 15px 0;
+  padding-right: 60px; /* Make room for date badge */
+}
+
+.publication-links {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+  margin-top: 15px;
+}
+
+.pub-link {
+  display: inline-flex;
+  align-items: center;
+  padding: 8px 14px;
+  background: var(--global-primary-color);
+  color: white;
+  text-decoration: none;
+  border-radius: 6px;
+  font-size: 0.85em;
+  font-weight: 500;
+  transition: all 0.2s ease;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.pub-link:hover {
+  color: white;
+  text-decoration: none;
+  transform: translateY(-1px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+}
+
+.pub-link i {
+  margin-right: 6px;
+  font-size: 0.9em;
+}
+
+/* Color coding for different link types */
+.pub-link:has(i.fa-file-pdf) {
+  background: #e74c3c; /* Red for papers */
+}
+
+.pub-link:has(i.fa-file-pdf):hover {
+  background: #c0392b;
+}
+
+.pub-link:has(i.fa-code) {
+  background: #2ecc71; /* Green for code */
+}
+
+.pub-link:has(i.fa-code):hover {
+  background: #27ae60;
+}
+
+.pub-link:has(i.fa-presentation, i.fa-file-powerpoint) {
+  background: #f39c12; /* Orange for presentations */
+}
+
+.pub-link:has(i.fa-presentation, i.fa-file-powerpoint):hover {
+  background: #e67e22;
+}
+
+.pub-link:has(i.fa-globe, i.fa-external-link-alt) {
+  background: #3498db; /* Blue for websites/projects */
+}
+
+.pub-link:has(i.fa-globe, i.fa-external-link-alt):hover {
+  background: #2980b9;
+}
+
+.pub-link:has(i.fa-video) {
+  background: #9b59b6; /* Purple for videos */
+}
+
+.pub-link:has(i.fa-video):hover {
+  background: #8e44ad;
+}
+
+.pub-link:has(i.fa-image) {
+  background: #e67e22; /* Orange for posters/images */
+}
+
+.pub-link:has(i.fa-image):hover {
+  background: #d35400;
+}
+
+.pub-link:has(i.fa-quote-right) {
+  background: #95a5a6; /* Light gray for BibTeX */
+}
+
+.pub-link:has(i.fa-quote-right):hover {
+  background: #7f8c8d;
+}
+
+.pub-link:has(i.fa-database) {
+  background: #34495e; /* Dark gray for datasets */
+}
+
+.pub-link:has(i.fa-database):hover {
+  background: #2c3e50;
+}
+
+/* Responsive design */
+@media (max-width: 1024px) {
+  .publications-grid {
+    gap: 1.2em;
+  }
+  
+  .publication-item {
+    padding: 20px;
+  }
+}
+
+@media (max-width: 768px) {
+  .category-title {
+    font-size: 1.5em;
+  }
+  
+  .publication-item {
+    padding: 16px;
+  }
+  
+  .publication-header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  
+  .publication-title {
+    min-width: auto;
+    margin-bottom: 5px;
+  }
+  
+  .publication-venue {
+    align-self: flex-start;
+    text-align: left;
+    white-space: normal;
+  }
+  
+  .publication-date {
+    position: static;
+    align-self: flex-start;
+    margin-bottom: 10px;
+  }
+  
+  .publication-description {
+    padding-right: 0;
+  }
+  
+  .publication-links {
+    justify-content: flex-start;
+  }
+  
+  .pub-link {
+    padding: 6px 12px;
+    font-size: 0.8em;
+  }
+  
+  .pub-link i {
+    margin-right: 4px;
+  }
+}
+
+@media (max-width: 480px) {
+  .publication-item {
+    padding: 12px;
+  }
+  
+  .publication-title {
+    font-size: 1.1em;
+  }
+  
+  .publication-links {
+    gap: 8px;
+  }
+  
+  .pub-link {
+    padding: 5px 10px;
+    font-size: 0.75em;
+  }
+}
+</style>
+
+
+

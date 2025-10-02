@@ -1,0 +1,464 @@
+
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+
+<meta charset="utf-8">
+
+
+
+<!-- begin SEO -->
+
+
+
+
+
+
+
+
+
+<title>Empowering Autonomous Driving with Large Language Models: A Safety Perspective - Home</title>
+
+
+
+<meta name="description" content="This paper explores the integration of Large Language Models (LLMs) into autonomous driving systems, leveraging their robust common-sense knowledge and reasoning abilities to enhance driving performance and safety in long-tail unforeseen scenarios.">
+
+
+
+
+
+  <meta property="article:published_time" content="2024-03-01T00:00:00+00:00">
+
+
+
+  <link rel="canonical" href="http://0.0.0.0:4001/publication/2024-iclr-workshop-llm-autonomous-driving">
+
+
+
+
+
+  
+
+  
+
+
+
+
+
+
+  <script type="application/ld+json">
+    {
+      "@context" : "http://schema.org",
+      "@type" : "Person",
+      "name" : "Simon Zhan",
+      "url" : "http://0.0.0.0:4001",
+      "sameAs" : null
+    }
+  </script>
+
+
+
+
+
+
+<!-- end SEO -->
+
+<!-- Open Graph protocol data (https://ogp.me/), used by social media -->
+<meta property="og:locale" content="en-US">
+<meta property="og:site_name" content="Home"> 
+<meta property="og:title" content="Empowering Autonomous Driving with Large Language Models: A Safety Perspective">
+
+  <meta property="og:type" content="article">
+
+
+  <meta property="og:description" name="description" content="This paper explores the integration of Large Language Models (LLMs) into autonomous driving systems, leveraging their robust common-sense knowledge and reasoning abilities to enhance driving performance and safety in long-tail unforeseen scenarios.">
+
+
+  <meta property="og:url" content="http://0.0.0.0:4001/publication/2024-iclr-workshop-llm-autonomous-driving">
+
+
+
+
+
+<!-- end Open Graph protocol -->
+
+<link href="http://0.0.0.0:4001/feed.xml" type="application/atom+xml" rel="alternate" title="Home Feed">
+
+<!-- http://t.co/dKP3o1e -->
+<meta name="HandheldFriendly" content="True">
+<meta name="MobileOptimized" content="320">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<script>
+  document.documentElement.className = document.documentElement.className.replace(/\bno-js\b/g, '') + ' js ';
+</script>
+
+<!-- For all browsers -->
+<link rel="stylesheet" href="http://0.0.0.0:4001/assets/css/main.css">
+
+<meta http-equiv="cleartype" content="on">
+    
+
+<!-- start custom head snippets -->
+
+<!-- Support for Academicons -->
+<link rel="stylesheet" href="http://0.0.0.0:4001/assets/css/academicons.css"/>
+
+<!-- favicon from https://commons.wikimedia.org/wiki/File:OOjs_UI_icon_academic-progressive.svg -->
+<link rel="apple-touch-icon" sizes="180x180" href="http://0.0.0.0:4001/images/apple-touch-icon-180x180.png"/>
+<link rel="icon" type="image/svg+xml" href="http://0.0.0.0:4001/images/favicon.svg"/>
+<link rel="icon" type="image/png" href="http://0.0.0.0:4001/images/favicon-32x32.png" sizes="32x32"/>
+<link rel="icon" type="image/png" href="http://0.0.0.0:4001/images/favicon-192x192.png" sizes="192x192"/>
+<link rel="manifest" href="http://0.0.0.0:4001/images/manifest.json"/>
+<link rel="icon" href="/images/favicon.ico"/>
+<meta name="theme-color" content="#ffffff"/>
+
+<!-- end custom head snippets -->
+
+  </head>
+
+  <body>
+
+    <!--[if lt IE 9]>
+<div class="notice--danger align-center" style="margin: 0;">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</div>
+<![endif]-->
+    
+
+<div class="masthead">
+  <div class="masthead__inner-wrap">
+    <div class="masthead__menu">
+      <nav id="site-nav" class="greedy-nav">
+        <button><div class="navicon"></div></button>
+        <ul class="visible-links">
+          <li class="masthead__menu-item masthead__menu-item--lg persist"><a href="http://0.0.0.0:4001/">Home</a></li>
+          
+            
+            <li class="masthead__menu-item"><a href="http://0.0.0.0:4001/publications/">Publications</a></li>
+          
+            
+            <li class="masthead__menu-item"><a href="http://0.0.0.0:4001/year-archive/">Blog Posts</a></li>
+          
+            
+            <li class="masthead__menu-item"><a href="http://0.0.0.0:4001/cv/">CV</a></li>
+          
+          <li id="theme-toggle" class="masthead__menu-item persist tail">
+            <a role="button" aria-labelledby="theme-icon"><i id="theme-icon" class="fa-solid fa-sun" aria-hidden="true" title="toggle theme"></i></a>
+          </li>
+        </ul>
+        <ul class="hidden-links hidden"></ul>
+      </nav>
+    </div>
+  </div>
+</div>
+
+    
+
+
+
+
+
+<div id="main" role="main">
+  
+
+
+  <div class="sidebar sticky">
+  
+
+
+
+<div itemscope itemtype="http://schema.org/Person">
+
+  <div class="author__avatar">
+    
+    	<img src="http://0.0.0.0:4001/images/simonzhan.jpg" class="author__avatar" alt="Sinong (Simon) Zhan"  fetchpriority="high" />
+    
+  </div>
+
+  <div class="author__content">
+    <h3 class="author__name">Sinong (Simon) Zhan</h3>
+    
+    <p class="author__bio">PhD student at Northwestern University</p>
+  </div>
+
+  <div class="author__urls-wrapper">
+    <button class="btn btn--inverse">Follow</button>
+    <ul class="author__urls social-icons">
+      <!-- Font Awesome icons / Biographic information  -->
+      
+        <li class="author__desktop"><i class="fas fa-fw fa-location-dot icon-pad-right" aria-hidden="true"></i>Evanston, IL</li>
+      
+      
+        <li class="author__desktop"><i class="fas fa-fw fa-building-columns icon-pad-right" aria-hidden="true"></i>Northwestern University</li>
+      
+      
+      
+        <li><a href="mailto:SinongZhan2028@u.northwestern.edu"><i class="fas fa-fw fa-envelope icon-pad-right" aria-hidden="true"></i>Email</a></li>
+      
+
+      <!-- Font Awesome and Academicons icons / Academic websites -->
+      
+            
+      
+        <li><a href="https://scholar.google.com/citations?user=uO4dG0wAAAAJ&hl=en"><i class="ai ai-google-scholar ai-fw icon-pad-right"></i>Google Scholar</a></li>
+      
+      
+      
+      
+                              
+      
+      
+      
+
+      <!-- Font Awesome icons / Repositories and software development -->
+      
+            
+            
+      
+        <li><a href="https://github.com/SimonZhan-code"><i class="fab fa-fw fa-github icon-pad-right" aria-hidden="true"></i>GitHub</a></li>
+      
+            
+            
+
+      <!-- Font Awesome icons / Social media -->
+              
+      
+      
+            
+      
+                  
+                  
+      
+            
+            
+            
+      
+            
+                  
+            
+      
+            
+            
+      
+        <li><a href="https://twitter.com/SimonZHAN7"><i class="fab fa-fw fa-x-twitter icon-pad-right" aria-hidden="true"></i>X (formerly Twitter)</a></li>
+      
+              
+      
+                      
+      
+      
+            
+    </ul>
+  </div>
+</div>
+
+  
+  </div>
+
+
+  <article class="page" itemscope itemtype="http://schema.org/CreativeWork">
+    <meta itemprop="headline" content="Empowering Autonomous Driving with Large Language Models: A Safety Perspective">
+    <meta itemprop="description" content="This paper explores the integration of Large Language Models (LLMs) into autonomous driving systems, leveraging their robust common-sense knowledge and reasoning abilities to enhance driving performance and safety in long-tail unforeseen scenarios.">
+    <meta itemprop="datePublished" content="March 01, 2024">
+    
+
+    <div class="page__inner-wrap">
+      
+        <header>
+          <h1 class="page__title" itemprop="headline">Empowering Autonomous Driving with Large Language Models: A Safety Perspective
+</h1>
+          
+        
+        
+        
+          <p>Published in <i>LLMAgent Workshop at International Conference on Learning Representations (ICLR)</i>, 2024 </p>
+            
+        </header>
+      
+
+      <section class="page__content" itemprop="text">
+        <p>This paper addresses significant safety challenges in autonomous driving (AD) systems, particularly in long-tail unforeseen driving scenarios. The work explores integrating Large Language Models (LLMs) into AD systems to leverage their robust common-sense knowledge and reasoning abilities. The proposed methodologies employ LLMs as intelligent decision-makers in behavioral planning, augmented with a safety verifier shield for contextual safety learning. The paper presents two key studies in simulated environments: an adaptive LLM-conditioned Model Predictive Control (MPC) and an LLM-enabled interactive behavior planning scheme with a state machine, demonstrating superior performance and safety metrics compared to state-of-the-art approaches.</p>
+
+<p><a href="https://arxiv.org/pdf/2312.00812">Download paper here</a></p>
+
+<p><strong>Authors:</strong> Yixuan Wang, Ruochen Jiao, Simon Zhan, Chengtian Lang, Chao Huang, Zhaoran Wang, Zhuoran Yang, Qi Zhu</p>
+
+
+        
+          <div class="citation-section">
+            <h3>Citation</h3>
+            <div class="citation-container">
+              <button class="copy-btn" onclick="copyBibtex()" title="Copy BibTeX to clipboard">
+                <i class="fas fa-copy"></i> Copy BibTeX
+              </button>
+              <pre class="bibtex-code" id="bibtex-content"><code>@inproceedings{wang2024empowering, title={Empowering Autonomous Driving with Large Language Models: A Safety Perspective}, author={Wang, Yixuan and Jiao, Ruochen and Zhan, Simon and Lang, Chengtian and Huang, Chao and Wang, Zhaoran and Yang, Zhuoran and Zhu, Qi}, booktitle={LLMAgent Workshop at International Conference on Learning Representations (ICLR)}, year={2024}, url={https://arxiv.org/abs/2312.00812} }</code></pre>
+            </div>
+          </div>
+        
+
+        
+          <div class="download-links">
+            
+              <a href="https://arxiv.org/pdf/2312.00812" class="btn btn--primary">
+                <i class="fas fa-file-pdf"></i> Download Paper
+              </a>
+            
+            
+            
+            
+            
+          </div>
+        
+
+        
+      </section>
+
+      <footer class="page__meta">
+        
+        
+
+
+
+
+      </footer>
+
+      
+
+<section class="page__share">
+  
+    <h4 class="page__share-title">Share on</h4>
+  
+
+  <a href="https://bsky.app/intent/compose?text=http://0.0.0.0:4001/publication/2024-iclr-workshop-llm-autonomous-driving" class="btn btn--bluesky" title="Share on Bluesky"><i class="fab fa-bluesky" aria-hidden="true"></i><span> Bluesky</span></a>
+
+  <a href="https://www.facebook.com/sharer/sharer.php?u=http://0.0.0.0:4001/publication/2024-iclr-workshop-llm-autonomous-driving" class="btn btn--facebook" title="Share on Facebook"><i class="fab fa-facebook" aria-hidden="true"></i><span> Facebook</span></a>
+
+  <a href="https://www.linkedin.com/shareArticle?mini=true&url=http://0.0.0.0:4001/publication/2024-iclr-workshop-llm-autonomous-driving" class="btn btn--linkedin" title="Share on LinkedIn"><i class="fab fa-linkedin" aria-hidden="true"></i><span> LinkedIn</span></a>
+
+  <a href="https://x.com/intent/post?text=http://0.0.0.0:4001/publication/2024-iclr-workshop-llm-autonomous-driving" class="btn btn--x" title="Share on X"><i class="fab fa-x-twitter" aria-hidden="true"></i><span> X (formerly Twitter)</span></a>
+</section>
+
+
+      
+
+
+  <nav class="pagination">
+    
+      <a href="http://0.0.0.0:4001/publication/2023-icml-safe-rl" class="pagination--pager" title="Enforcing Hard Constraints with Soft Barriers: Safe Reinforcement Learning in Unknown Stochastic Environments
+">Previous</a>
+    
+    
+      <a href="http://0.0.0.0:4001/publication/2024-l4dc-pixel-safe-rl" class="pagination--pager" title="State-wise Safe Reinforcement Learning With Pixel Observations
+">Next</a>
+    
+  </nav>
+
+    </div>
+
+    
+  </article>
+
+  
+  
+</div>
+
+<script>
+function copyBibtex() {
+  const bibtexContent = document.getElementById('bibtex-content').innerText;
+  navigator.clipboard.writeText(bibtexContent).then(function() {
+    // Success feedback
+    const btn = document.querySelector('.copy-btn');
+    const originalText = btn.innerHTML;
+    btn.innerHTML = '<i class="fas fa-check"></i> Copied!';
+    btn.style.backgroundColor = '#28a745';
+    
+    setTimeout(function() {
+      btn.innerHTML = originalText;
+      btn.style.backgroundColor = '';
+    }, 2000);
+  }, function(err) {
+    // Fallback for older browsers
+    const textArea = document.createElement('textarea');
+    textArea.value = bibtexContent;
+    document.body.appendChild(textArea);
+    textArea.select();
+    document.execCommand('copy');
+    document.body.removeChild(textArea);
+    
+    // Success feedback
+    const btn = document.querySelector('.copy-btn');
+    const originalText = btn.innerHTML;
+    btn.innerHTML = '<i class="fas fa-check"></i> Copied!';
+    btn.style.backgroundColor = '#28a745';
+    
+    setTimeout(function() {
+      btn.innerHTML = originalText;
+      btn.style.backgroundColor = '';
+    }, 2000);
+  });
+}
+</script>
+
+
+    <div class="page__footer">
+      <footer>
+        <!-- start custom footer snippets -->
+
+<a href="/sitemap/">Sitemap</a>
+
+<!-- Support for MatJax -->
+<script defer src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js" id="MathJax-script"></script>
+
+<!-- Support for Plotly -->
+<script defer src='https://cdnjs.cloudflare.com/ajax/libs/plotly.js/3.0.1/plotly.min.js'></script>
+
+<!-- Support for Mermaid -->
+<script type="module">
+    import mermaid from 'https://cdn.jsdelivr.net/npm/mermaid@11/dist/mermaid.esm.min.mjs';
+    mermaid.initialize({startOnLoad:true, theme:'default'});
+    await mermaid.run({querySelector:'code.language-mermaid'});
+</script>
+
+<!-- end custom footer snippets -->
+
+        
+
+
+<div class="page__footer-follow">
+  <ul class="social-icons">
+    
+      <li><strong>Follow:</strong></li>
+    
+    
+      <li><a href="http://github.com/SimonZhan-code"><i class="fab fa-github" aria-hidden="true"></i> GitHub</a></li>
+    
+    
+    
+    <li><a href="http://0.0.0.0:4001/feed.xml"><i class="fa fa-fw fa-rss-square" aria-hidden="true"></i> Feed</a></li>
+    
+  </ul>
+</div>
+
+
+<div class="page__footer-copyright">
+  &copy; 2025 Simon Zhan, Powered by <a href="http://jekyllrb.com" rel="nofollow">Jekyll</a> &amp; <a href="https://github.com/academicpages/academicpages.github.io">AcademicPages</a>, a fork of <a href="https://mademistakes.com/work/minimal-mistakes-jekyll-theme/" rel="nofollow">Minimal Mistakes</a>.<br />
+  Site last updated 2025-10-02
+</div>
+
+      </footer>
+    </div>
+
+    <script type="module" src="http://0.0.0.0:4001/assets/js/main.min.js"></script>
+
+
+
+
+
+
+
+
+  </body>
+</html>
+
