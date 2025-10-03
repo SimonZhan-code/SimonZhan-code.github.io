@@ -67,7 +67,7 @@ My research lies at the intersection of Reinforcement Learning and Formal Method
       <div class="publication-venue">NeurIPS 2024 <span class="spotlight-badge">Spotlight</span></div>
     </div>
     <div class="publication-authors">
-      Qingyuan Wu*, <strong>Simon Zhan*</strong>, Yixuan Wang, Yuhui Wang, Chung-Wei Lin, Chen Lv, Qi Zhu, Chao Huang
+      Qingyuan Wu*, <strong>Simon Zhan*</strong>, Yixuan Wang, Yuhui Wang, Chung-Wei Lin, Chen Lv, Qi Zhu, Chao Huang (* equal contribution)
     </div>
     <div class="publication-description">
       Variational Delayed Policy Optimization (VDPO) reformulates delayed RL as a variational inference problem, solved through a two-step iterative optimization process with TD learning and behavior cloning.
@@ -113,7 +113,7 @@ My research lies at the intersection of Reinforcement Learning and Formal Method
       <div class="publication-venue">ICCPS 2023</div>
     </div>
     <div class="publication-authors">
-      Yixuan Wang*, <strong>Simon Zhan*</strong>, Zhilu Wang, Chao Huang, Zhaoran Wang, Zhuoran Yang, Qi Zhu
+      Yixuan Wang*, <strong>Simon Zhan*</strong>, Zhilu Wang, Chao Huang, Zhaoran Wang, Zhuoran Yang, Qi Zhu (* equal contribution)
     </div>
     <div class="publication-description">
       A framework that jointly conducts reinforcement learning and formal verification by formulating and solving a novel bilevel optimization problem, which is end-to-end differentiable through gradients from the value function and certificates formulated by linear programs and semi-definite programs.
