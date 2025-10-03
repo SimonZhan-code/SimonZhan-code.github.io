@@ -6,6 +6,7 @@ permalink: /publication/2024-l4dc-pixel-safe-rl
 excerpt: 'In this paper, we propose a novel pixel-observation safe RL algorithm that efficiently encodes state-wise safety constraints with unknown hazard regions through the introduction of a latent barrier function learning mechanism.'
 date: 2024-04-01
 venue: 'Learning for Dynamics and Control Conference (L4DC)'
+authors: 'Simon Sinong Zhan, Yixuan Wang, Qingyuan Wu, Ruochen Jiao, Chao Huang, Qi Zhu'
 paperurl: 'https://arxiv.org/abs/2311.02227'
 codeurl: 'https://github.com/SimonZhan-code/Step-Wise_SafeRL_Pixel'
 citation: '@inproceedings{zhan2024statewise,

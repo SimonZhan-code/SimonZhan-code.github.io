@@ -6,6 +6,7 @@ permalink: /publication/2023-icml-safe-rl
 excerpt: 'A safe RL approach that can jointly learn the environment and optimize the control policy, while effectively avoiding unsafe regions with safety probability optimization.'
 date: 2023-05-01
 venue: 'International Conference on Machine Learning (ICML)'
+authors: 'Yixuan Wang, Simon Sinong Zhan, Ruochen Jiao, Zhilu Wang, Wanxin Jin, Zhuoran Yang, Zhaoran Wang, Chao Huang, Qi Zhu'
 paperurl: 'https://arxiv.org/abs/2209.15090'
 codeurl: 'https://github.com/wangyixu14/safe_unknown_control'
 citation: '@inproceedings{wang2023enforcing,

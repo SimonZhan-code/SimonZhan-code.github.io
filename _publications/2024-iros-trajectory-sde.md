@@ -6,6 +6,7 @@ permalink: /publication/2024-iros-trajectory-sde
 excerpt: 'This paper presents a novel approach to trajectory generation and prediction that incorporates kinematic constraints through latent stochastic differential equations, enabling more realistic and physically-consistent motion planning.'
 date: 2024-06-01
 venue: 'IEEE/RSJ International Conference on Intelligent Robots and Systems (IROS)'
+authors: 'Ruochen Jiao*, Yixuan Wang*, Xiangguo Liu, Simon Sinong Zhan, Chao Huang, Qi Zhu (*equal contribution)'
 paperurl: 'https://arxiv.org/abs/2309.09317'
 citation: '@inproceedings{zhan2024kinematics,
   title={Kinematics-aware Trajectory Generation and Prediction with Latent SDE},

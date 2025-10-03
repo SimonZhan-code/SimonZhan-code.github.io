@@ -6,6 +6,7 @@ permalink: /publication/2024-neurips-vdpo
 excerpt: 'Variational Delayed Policy Optimization (VDPO) reformulates delayed RL as a variational inference problem, which is further modelled as a two-step iterative optimization problem, where the first step is TD learning in the delay-free environment with a small state space, and the second step is behaviour cloning which can be addressed much more efficiently than TD learning.'
 date: 2024-10-01
 venue: 'Conference on Neural Information Processing Systems (NeurIPS)'
+authors: 'Qingyuan Wu*, Simon Sinong Zhan*, Yixuan Wang, Yuhui Wang, Chung-Wei Lin, Chen Lv, Qi Zhu, Chao Huang (*equal contribution)'
 paperurl: 'https://arxiv.org/pdf/2405.14226'
 codeurl: 'https://github.com/QingyuanWuNothing/VDPO'
 citation: '@inproceedings{wu2024variational,

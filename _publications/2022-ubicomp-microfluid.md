@@ -6,6 +6,7 @@ permalink: /publication/2022-ubicomp-microfluid
 excerpt: 'MicroFluID is a novel RFID artifact based on a multiple-chip structure and microfluidic switches, which informs the input state by directly reading variable ID information instead of retrieving primitive signals.'
 date: 2022-09-01
 venue: 'ACM International Joint Conference on Pervasive and Ubiquitous Computing (UbiComp)'
+authors: 'Wei Sun, Yuwen Chen, Yanjun Chen, Xiaopeng Zhang, Simon Zhan, Yixin Li, Jiecheng Wu, Teng Han, Haipeng Mi, Jingxian Wang, Feng Tian, Xing-Dong Yang'
 paperurl: 'https://dl.acm.org/doi/abs/10.1145/3550296'
 videourl: 'https://youtu.be/7GbWFIrZ5Zw'
 citation: '@article{sun2022microfluid,

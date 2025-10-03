@@ -6,6 +6,7 @@ permalink: /publication/2025-icml-belief-forecasting
 excerpt: 'This paper presents a novel approach to directly forecast beliefs in reinforcement learning with observation delays, improving upon traditional methods by incorporating predictive capabilities into the learning process.'
 date: 2025-05-01
 venue: 'International Conference on Machine Learning (ICML)'
+authors: 'Qingyuan Wu*, Yuhui Wang*, Simon Sinong Zhan*, Yixuan Wang, Chung-Wei Lin, Chen Lv, Qi Zhu, Jürgen Schmidhuber, Chao Huang  (*equal contribution)'
 paperurl: 'https://arxiv.org/pdf/2505.00546'
 citation: '@inproceedings{zhan2025directly,
   title={Directly Forecasting Belief for Reinforcement Learning with Delays},
@@ -20,4 +21,4 @@ This paper introduces a novel framework for directly forecasting beliefs in rein
 
 
 
-**Authors:** Simon Sinong Zhan*, Qingyuan Wu*, Yixuan Wang, Chao Huang, Qi Zhu (*equal contribution)
+**Authors:** Qingyuan Wu*, Yuhui Wang*, Simon Sinong Zhan*, Yixuan Wang, Chung-Wei Lin, Chen Lv, Qi Zhu, Jürgen Schmidhuber, Chao Huang  (*equal contribution)

@@ -6,6 +6,7 @@ permalink: /publication/2024-icml-adrl
 excerpt: 'Auxiliary-Delayed Reinforcement Learning (AD-RL) leverages an auxiliary short-delayed task to accelerate the learning on a strongly delayed task without compromising the performance in stochastic environments.'
 date: 2024-05-01
 venue: 'International Conference on Machine Learning (ICML)'
+authors: 'Qingyuan Wu, Simon Sinong Zhan, Yixuan Wang, Yuhui Wang, Chung-Wei Lin, Chen Lv, Qi Zhu, Jürgen Schmidhuber, Chao Huang'
 paperurl: 'https://arxiv.org/abs/2402.03141'
 codeurl: 'https://github.com/QingyuanWuNothing/AD-RL'
 citation: '@inproceedings{wu2024boosting,

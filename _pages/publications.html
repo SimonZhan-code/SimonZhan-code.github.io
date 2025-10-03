@@ -43,7 +43,7 @@ author_profile: true
           <div class="publication-item">
             <div class="publication-header">
               <h3 class="publication-title">
-                <a href="{{ post.url | prepend: base_path }}">{{ post.title }}</a>
+                {{ post.title }}
               </h3>
               <div class="publication-date">{{ post.date | date: "%Y" }}</div>
             </div>
@@ -56,6 +56,12 @@ author_profile: true
                 {% endif %}
               {% endif %}
             </div>
+            
+            {% if post.authors %}
+              <div class="publication-authors">
+                {{ post.authors }}
+              </div>
+            {% endif %}
             
             {% if post.excerpt %}
               <div class="publication-description">
@@ -133,12 +139,18 @@ author_profile: true
         <div class="publication-item">
           <div class="publication-header">
             <h3 class="publication-title">
-              <a href="{{ post.url | prepend: base_path }}">{{ post.title }}</a>
+              {{ post.title }}
             </h3>
             <div class="publication-date">{{ post.date | date: "%Y" }}</div>
           </div>
           
           <div class="publication-venue">{{ post.venue }}</div>
+          
+          {% if post.authors %}
+            <div class="publication-authors">
+              {{ post.authors }}
+            </div>
+          {% endif %}
           
           {% if post.excerpt %}
             <div class="publication-description">
