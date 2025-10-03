@@ -10,11 +10,12 @@ authors: 'Yixuan Wang, Simon Sinong Zhan, Ruochen Jiao, Zhilu Wang, Wanxin Jin, 
 paperurl: 'https://arxiv.org/abs/2209.15090'
 codeurl: 'https://github.com/wangyixu14/safe_unknown_control'
 citation: '@inproceedings{wang2023enforcing,
-  title={Enforcing Hard Constraints with Soft Barriers: Safe Reinforcement Learning in Unknown Stochastic Environments},
-  author={Wang, Yixuan and Zhan, Sinong Simon and Jiao, Ruochen and Wang, Zhilu and Jin, Wanxin and Yang, Zhuoran and Wang, Zhaoran and Huang, Chao and Zhu, Qi},
-  booktitle={International Conference on Machine Learning (ICML)},
+  title={Enforcing hard constraints with soft barriers: Safe reinforcement learning in unknown stochastic environments},
+  author={Wang, Yixuan and Zhan, Simon Sinong and Jiao, Ruochen and Wang, Zhilu and Jin, Wanxin and Yang, Zhuoran and Wang, Zhaoran and Huang, Chao and Zhu, Qi},
+  booktitle={International Conference on Machine Learning},
+  pages={36593--36604},
   year={2023},
-  url={https://arxiv.org/abs/2209.15090}
+  organization={PMLR}
 }'
 ---
 

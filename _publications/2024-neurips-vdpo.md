@@ -9,13 +9,13 @@ venue: 'Conference on Neural Information Processing Systems (NeurIPS)'
 authors: 'Qingyuan Wu*, Simon Sinong Zhan*, Yixuan Wang, Yuhui Wang, Chung-Wei Lin, Chen Lv, Qi Zhu, Chao Huang (*equal contribution)'
 paperurl: 'https://arxiv.org/pdf/2405.14226'
 codeurl: 'https://github.com/QingyuanWuNothing/VDPO'
-citation: '@inproceedings{wu2024variational,
-  title={Variational Delayed Policy Optimization},
-  author={Wu, Qingyuan and Zhan, Sinong Simon and Wang, Yixuan and Wang, Yuhui and Lin, Chung-Wei and Lv, Chen and Zhu, Qi and Huang, Chao},
-  booktitle={Advances in Neural Information Processing Systems (NeurIPS)},
-  year={2024},
-  note={Spotlight},
-  url={https://arxiv.org/abs/2405.14226}
+citation: '@article{wu2024variational,
+  title={Variational delayed policy optimization},
+  author={Wu, Qingyuan and Zhan, Simon S and Wang, Yixuan and Wang, Yuhui and Lin, Chung-Wei and Lv, Chen and Zhu, Qi and Huang, Chao},
+  journal={Advances in neural information processing systems},
+  volume={37},
+  pages={54330--54356},
+  year={2024}
 }'
 ---
 
