@@ -19,8 +19,6 @@ citation: '@inproceedings{wang2023joint,
 
 This paper presents a novel framework that jointly conducts reinforcement learning and formal verification by formulating and solving a bilevel optimization problem. The approach is end-to-end differentiable through gradients from the value function and certificates formulated by linear programs and semi-definite programs, enabling certified safe policy learning.
 
-[Download paper here](https://arxiv.org/abs/2201.12243)
 
-[Code available here](https://github.com/SimonZhan-code/Certified-RL-LP)
 
 **Authors:** Yixuan Wang*, Simon Sinong Zhan*, Zhilu Wang, Chao Huang, Zhaoran Wang, Zhuoran Yang, Qi Zhu (*equal contribution)

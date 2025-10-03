@@ -18,6 +18,6 @@ citation: '@inproceedings{zhan2024kinematics,
 
 This work introduces a kinematics-aware framework for trajectory generation and prediction using latent stochastic differential equations (SDEs). The approach ensures that generated trajectories respect physical constraints and kinematic limitations while maintaining predictive accuracy in uncertain environments.
 
-[Download paper here](https://arxiv.org/abs/2309.09317)
+
 
 **Authors:** Simon Sinong Zhan, Qingyuan Wu, Yixuan Wang, Chao Huang, Qi Zhu

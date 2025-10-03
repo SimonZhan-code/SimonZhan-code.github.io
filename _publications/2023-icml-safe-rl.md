@@ -19,8 +19,6 @@ citation: '@inproceedings{wang2023enforcing,
 
 This paper presents a novel safe reinforcement learning approach that can jointly learn the environment and optimize the control policy while effectively avoiding unsafe regions. The method introduces soft barriers to enforce hard safety constraints and incorporates safety probability optimization to ensure reliable performance in unknown stochastic environments.
 
-[Download paper here](https://arxiv.org/abs/2209.15090)
 
-[Code available here](https://github.com/wangyixu14/safe_unknown_control)
 
 **Authors:** Yixuan Wang, Simon Sinong Zhan, Ruochen Jiao, Zhilu Wang, Wanxin Jin, Zhuoran Yang, Zhaoran Wang, Chao Huang, Qi Zhu

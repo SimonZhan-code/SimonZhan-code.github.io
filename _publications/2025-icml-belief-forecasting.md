@@ -18,6 +18,6 @@ citation: '@inproceedings{zhan2025directly,
 
 This paper introduces a novel framework for directly forecasting beliefs in reinforcement learning scenarios with observation delays. By incorporating predictive capabilities into the belief state estimation process, the method achieves improved performance compared to traditional approaches that rely on historical information alone.
 
-[Download paper here](https://arxiv.org/pdf/2505.00546)
 
-**Authors:** Simon Sinong Zhan, Qingyuan Wu, Yixuan Wang, Chao Huang, Qi Zhu
+
+**Authors:** Simon Sinong Zhan*, Qingyuan Wu*, Yixuan Wang, Chao Huang, Qi Zhu (*equal contribution)

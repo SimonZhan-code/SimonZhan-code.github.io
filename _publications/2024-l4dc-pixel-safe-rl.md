@@ -19,8 +19,6 @@ citation: '@inproceedings{zhan2024statewise,
 
 This paper addresses the challenge of safe reinforcement learning when only pixel observations are available. We propose a novel algorithm that efficiently encodes state-wise safety constraints with unknown hazard regions through a latent barrier function learning mechanism. The approach enables safe policy learning directly from high-dimensional visual observations without requiring explicit state representations.
 
-[Download paper here](https://arxiv.org/abs/2311.02227)
 
-[Code and demos available here](https://github.com/SimonZhan-code/Step-Wise_SafeRL_Pixel)
 
 **Authors:** Simon Sinong Zhan, Yixuan Wang, Qingyuan Wu, Ruochen Jiao, Chao Huang, Qi Zhu

@@ -20,6 +20,6 @@ citation: '@inproceedings{wu2024variational,
 
 This paper introduces Variational Delayed Policy Optimization (VDPO), a novel approach to reinforcement learning with delayed observations. The method reformulates the delayed RL problem as a variational inference problem and solves it through a two-step iterative optimization process. The first step involves TD learning in a delay-free environment with a reduced state space, while the second step uses behavior cloning, which is computationally more efficient than traditional TD learning approaches.
 
-[Download paper here](https://arxiv.org/pdf/2405.14226)
+
 
 **Authors:** Qingyuan Wu*, Simon Sinong Zhan*, Yixuan Wang, Yuhui Wang, Chung-Wei Lin, Chen Lv, Qi Zhu, Chao Huang (*equal contribution)

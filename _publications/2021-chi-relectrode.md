@@ -8,6 +8,7 @@ date: 2021-05-01
 venue: 'ACM Conference on Human Factors in Computing Systems (CHI)'
 paperurl: 'https://doi.org/10.1145/3411764.3445652'
 videourl: 'https://youtu.be/NqMHIDaU7Tg'
+
 citation: '@inproceedings{sun2021relectrode,
   title={RElectrode: A Reconfigurable Electrode For Multi-Purpose Sensing Based on Microfluidics},
   author={Sun, Wei and Chen, Yanjun and Zhan, Simon and Han, Teng and Tian, Feng and Wang, Hongan and Yang, Xing-Dong},
@@ -20,8 +21,5 @@ citation: '@inproceedings{sun2021relectrode,
 
 RElectrode presents a novel reconfigurable electrode that leverages microfluidic techniques to dynamically change its geometry and material properties. This innovation enables sensing of diverse user inputs including touch and touchless gestures, pressure, temperature, and can distinguish between different types of objects or liquids, making it highly versatile for interactive applications.
 
-[Download paper here](https://doi.org/10.1145/3411764.3445652)
-
-[Watch video demonstration](https://youtu.be/NqMHIDaU7Tg)
 
 **Authors:** Wei Sun, Yanjun Chen, Simon Zhan, Teng Han, Feng Tian, Hongan Wang, Xing-Dong Yang
