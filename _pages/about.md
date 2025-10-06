@@ -11,7 +11,7 @@ I am a 3rd year PhD student in the ECE department at Northwestern University, ad
 
 ## Research Statement
 
-My research lies at the intersection of Reinforcement Learning and Formal Methods, developing principled approaches to ensure safety, robustness, and verifiability in embodied cyber-physical systems. I focus on integrating formal verification techniques with learning-based control to provide guarantees while maintaining adaptability and performance. My work spans safe reinforcement learning with constraint satisfaction, delay-aware optimization under uncertainty, model-based approaches for certified learning, and neurosymbolic methods that combine symbolic reasoning with neural computation to achieve interpretable and verifiable intelligent systems. And my research has resulted in publications in some top tier conference such as ICML, NeurIPS, ICCPS, L4DC, FM, RV, IROS, etc. 
+My research bridges reinforcement learning and formal methods to make embodied cyber-physical systems safe, robust, and verifiable. I combine formal verification with learning-based control to obtain machine-checkable guarantees without sacrificing adaptability or performance. Current threads include constraint-satisfaction–based safe RL and runtime certification; delay-aware decision making under uncertainty; model-based, certificate-driven learning; and neuro-symbolic techniques that couple logical reasoning with deep models for interpretable policies. This agenda targets trustworthy autonomy at scale and has led to publications in venues such as ICML, NeurIPS, ICCPS, L4DC, FM, RV, and IROS.
 
 ## News
 
