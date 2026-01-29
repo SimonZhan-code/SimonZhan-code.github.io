@@ -18,7 +18,7 @@ My research bridges reinforcement learning and formal methods to make embodied c
 <div class="news-container">
   <div class="news-scroll">
   <div class="news-item">
-      <span class="news-date">[01/2026]</span> 3 paper have been accepted to <a href="https://iclr.cc/">ICLR 2026</a>.
+      <span class="news-date">[01/2026]</span> 2 paper have been accepted to <a href="https://iclr.cc/">ICLR 2026</a>.
     </div>
   <div class="news-item">
       <span class="news-date">[01/2026]</span> 1 paper have been accepted to <a href="https://sites.google.com/usc.edu/l4dc2026/">L4DC 2026</a>.
