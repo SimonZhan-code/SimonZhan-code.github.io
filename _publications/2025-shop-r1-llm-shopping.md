@@ -1,7 +1,7 @@
 ---
 title: "Shop-R1: Rewarding LLMs to Simulate Human Behavior in Online Shopping via Reinforcement Learning"
 collection: publications
-category: conference
+category: conferences
 permalink: /publication/2025-shop-r1-llm-shopping
 excerpt: 'This paper introduces Shop-R1, a novel reinforcement learning framework aimed at enhancing the reasoning ability of LLMs for simulation of real human behavior in online shopping environments through a two-stage approach with distinct reward signals.'
 date: 2026-01-23

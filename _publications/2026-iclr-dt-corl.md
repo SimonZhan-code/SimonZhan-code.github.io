@@ -1,7 +1,7 @@
 ---
 title: "Belief-Based Offline Reinforcement Learning for Delay-Robust Policy Optimization"
 collection: publications
-category: conference
+category: conferences
 permalink: /publication/2026-iclr-dt-corl.md
 excerpt: 'This paper introduces Shop-R1, a novel reinforcement learning framework aimed at enhancing the reasoning ability of LLMs for simulation of real human behavior in online shopping environments through a two-stage approach with distinct reward signals.'
 date: 2026-01-23
