@@ -11,7 +11,7 @@ I am a 3rd year PhD student in the ECE department at Northwestern University, ad
 
 ## Research Statement
 
-My research bridges reinforcement learning and formal methods to make embodied cyber-physical systems safe, robust, and verifiable. I combine formal verification with learning-based control to obtain machine-checkable guarantees without sacrificing adaptability or performance. Current threads include constraint-satisfaction–based safe RL and runtime certification; delay-aware decision making under uncertainty; model-based, certificate-driven learning; and neuro-symbolic techniques that couple logical reasoning with deep models for interpretable policies. This agenda targets trustworthy autonomy at scale and has led to publications in venues such as ICML, NeurIPS, ICCPS, L4DC, FM, RV, and IROS.
+My research bridges reinforcement learning and formal methods to make embodied cyber-physical systems safe, robust, and verifiable. I combine formal verification with learning-based control to obtain machine-checkable guarantees without sacrificing adaptability or performance. Current threads include constraint-satisfaction–based safe RL and runtime certification; delay-aware decision making under uncertainty; model-based, certificate-driven learning; and neuro-symbolic techniques that couple logical reasoning with deep models for interpretable policies. This agenda targets trustworthy autonomy at scale and has led to publications in venues such as ICML, NeurIPS, ICLR, ICCPS, L4DC, FM, RV, and IROS.
 
 ## News
 
@@ -65,6 +65,26 @@ My research bridges reinforcement learning and formal methods to make embodied c
 ## Selected Publications
 
 <div class="selected-publications">
+  <div class="publication-item">
+    <div class="publication-header">
+      <h3 class="publication-title">
+        <a href="/publication/2026-iclr-dt-corl.md">Belief-Based Offline Reinforcement Learning for Delay-Robust Policy Optimization</a>
+      </h3>
+      <div class="publication-venue">ICLR 2026</div>
+    </div>
+    <div class="publication-authors">
+      <strong>Simon Sinong Zhan</strong>, Qingyuan Wu, Philip Wang, Frank Yang, Xiangyu Shi, Chao Huang, Qi Zhu
+    </div>
+    <div class="publication-description">
+      DT-CORL learns delay-robust policies from static, delay-free offline data by jointly optimizing a transformer-based belief model and a constrained policy objective.
+    </div>
+    <div class="publication-links">
+      <a href="https://arxiv.org/pdf/2506.00131" class="pub-link pdf-link">
+        <i class="fas fa-file-pdf"></i> Paper
+      </a>
+    </div>
+  </div>
+
   <div class="publication-item">
     <div class="publication-header">
       <h3 class="publication-title">

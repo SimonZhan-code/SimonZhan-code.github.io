@@ -1,11 +1,11 @@
 ---
 title: "Shop-R1: Rewarding LLMs to Simulate Human Behavior in Online Shopping via Reinforcement Learning"
 collection: publications
-category: workshops
+category: conference
 permalink: /publication/2025-shop-r1-llm-shopping
 excerpt: 'This paper introduces Shop-R1, a novel reinforcement learning framework aimed at enhancing the reasoning ability of LLMs for simulation of real human behavior in online shopping environments through a two-stage approach with distinct reward signals.'
-date: 2025-07-01
-venue: 'Scaling Environments for Agents (SEA) Workshop at NeurIPS 2025'
+date: 2026-01-23
+venue: 'ICLR 2026/Scaling Environments for Agents (SEA) Workshop at NeurIPS 2025'
 authors: 'Yimeng Zhang, Tian Wang, Jiri Gesi, Ziyi Wang, Yuxuan Lu, Jiacheng Lin, Sinong Zhan, Vianne Gao, Ruochen Jiao, Junze Liu, Kun Qian, Yuxin Tang, Ran Xue, Houyu Zhang, Qingjun Cui, Yufan Guo, Dakuo Wang'
 paperurl: 'https://arxiv.org/pdf/2507.17842'
 citation: '@inproceedings{zhang2025shop,
