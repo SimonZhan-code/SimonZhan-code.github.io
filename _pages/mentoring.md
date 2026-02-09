@@ -14,7 +14,7 @@ author_profile: true
 
 ### Undergraduate Students
 - **[Jixin Yan](https://kevinyan831.space/)** (2026-Present) -
-- **[Eric Yang]** (2025-Present) - 
+- **[Eric Yang](http://linkedin.com/in/eric-yang-875b41236)** (2025-Present) - 
 - **[Justin Liu (USC)](https://www.linkedin.com/in/justinyliu)** (2024-Present) -
 - **[Philip Wang](https://www.linkedin.com/in/philip-wang-a3919a270)** (2024-Present) - 
 - **[Aria Ruan](https://ariar1225.github.io/)** (2023-2025) - Now at Tesla.
