@@ -18,10 +18,10 @@ My research bridges reinforcement learning and formal methods to make embodied c
 <div class="news-container">
   <div class="news-scroll">
   <div class="news-item">
-      <span class="news-date">[01/2026]</span> 2 paper have been accepted to <a href="https://iclr.cc/">ICLR 2026</a>.
+      <span class="news-date">[01/2026]</span> <a href="https://arxiv.org/pdf/2506.00131">DT-CORL</a> and <a href="https://arxiv.org/pdf/2507.17842">Shop-R1</a> have been accepted to <a href="https://iclr.cc/">ICLR 2026</a>.
     </div>
   <div class="news-item">
-      <span class="news-date">[01/2026]</span> 1 paper have been accepted to <a href="https://sites.google.com/usc.edu/l4dc2026/">L4DC 2026</a>.
+      <span class="news-date">[01/2026]</span> <a href="https://arxiv.org/pdf/2410.03847">"Enhancing Inverse Reinforcement Learning through Encoding Dynamic Information in Reward Shaping"</a> has been accepted to <a href="https://sites.google.com/usc.edu/l4dc2026/">L4DC 2026</a>.
     </div>
   <div class="news-item">
       <span class="news-date">[10/2025]</span> 2 paper have been accepted to <a href="https://sea-workshop.github.io/">SEA@NeurIPS 2025</a>.
