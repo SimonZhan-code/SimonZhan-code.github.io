@@ -18,6 +18,9 @@ My research bridges reinforcement learning and formal methods to make embodied c
 <div class="news-container">
   <div class="news-scroll">
   <div class="news-item">
+      <span class="news-date">[02/2026]</span> <a href="https://arxiv.org/pdf/2511.13132">One Paper</a> has been accepted to <a href="https://cvpr.thecvf.com/">CVPR 2026</a>.
+    </div>
+  <div class="news-item">
       <span class="news-date">[01/2026]</span> <a href="https://arxiv.org/pdf/2506.00131">DT-CORL</a> and <a href="https://arxiv.org/pdf/2507.17842">Shop-R1</a> have been accepted to <a href="https://iclr.cc/">ICLR 2026</a>.
     </div>
   <div class="news-item">
