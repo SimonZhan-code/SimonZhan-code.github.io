@@ -85,6 +85,9 @@ My research bridges reinforcement learning and formal methods to make embodied c
       <a href="https://arxiv.org/pdf/2506.00131" class="pub-link pdf-link">
         <i class="fas fa-file-pdf"></i> Paper
       </a>
+      <a href="https://github.com/SimonZhan-code/DT-CORL" class="pub-link code-link">
+        <i class="fas fa-code"></i> Code
+      </a>
     </div>
   </div>
 
