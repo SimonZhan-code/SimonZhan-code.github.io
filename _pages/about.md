@@ -18,6 +18,9 @@ My research bridges reinforcement learning and formal methods to make embodied c
 <div class="news-container">
   <div class="news-scroll">
   <div class="news-item">
+      <span class="news-date">[03/2026]</span> Glad to join Google Research as a Summer Research Intern.
+    </div>
+  <div class="news-item">
       <span class="news-date">[02/2026]</span> <a href="https://arxiv.org/pdf/2511.13132">One Paper</a> has been accepted to <a href="https://cvpr.thecvf.com/">CVPR 2026</a>.
     </div>
   <div class="news-item">
