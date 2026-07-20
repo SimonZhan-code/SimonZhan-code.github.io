@@ -6,6 +6,7 @@ permalink: /publication/2026-l4dc-model-based-irl
 excerpt: 'This paper proposes a transition-aware reward shaping framework for adversarial inverse reinforcement learning in stochastic environments, integrating transition model estimation to learn stochastic-invariant rewards and improve sample efficiency and performance.'
 date: 2026-01-30
 venue: 'L4DC 2026'
+badge: 'L4DC 2026'
 authors: 'Simon Sinong Zhan, Philip Wang, Qingyuan Wu, Ruochen Jiao, Yixuan Wang, Chao Huang, Qi Zhu (*equal contribution)'
 paperurl: 'https://arxiv.org/pdf/2410.03847'
 citation: '@article{zhan2024enhancing,

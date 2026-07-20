@@ -1,0 +1,10 @@
+<div class="news-list">
+  <ul>
+    {% for item in site.data.news %}
+    <li>
+      <span class="news-list__date">{{ item.date }}</span>
+      <span class="news-list__text">{{ item.text | markdownify | remove: '<p>' | remove: '</p>' }}</span>
+    </li>
+    {% endfor %}
+  </ul>
+</div>

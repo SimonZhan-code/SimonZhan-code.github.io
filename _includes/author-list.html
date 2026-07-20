@@ -1,0 +1,11 @@
+{% assign a = include.authors
+  | replace: "Simon Sinong Zhan", "%%A%%"
+  | replace: "Sinong Simon Zhan", "%%D%%"
+  | replace: "Sinong Zhan", "%%B%%"
+  | replace: "Simon Zhan", "%%C%%"
+%}{{ a
+  | replace: "%%A%%", "<strong>Simon Sinong Zhan</strong>"
+  | replace: "%%D%%", "<strong>Sinong Simon Zhan</strong>"
+  | replace: "%%B%%", "<strong>Sinong Zhan</strong>"
+  | replace: "%%C%%", "<strong>Simon Zhan</strong>"
+}}

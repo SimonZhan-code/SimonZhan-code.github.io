@@ -1,0 +1,18 @@
+# Experience entries, newest first.
+# logo: filename in images/logos/ (omit to show an initial-letter tile instead)
+- role: "Research Intern"
+  org: "Google — Google Research & P+D Team"
+  url: "https://research.google/"
+  logo: "google.svg"
+  dates: "Jun 2026 – Present"
+  note: "RL and test-time steering for agents learning complex software tools, with [Maryam Karimzadehgan](https://research.google/people/106155/) and [Benny Schlesinger](https://www.linkedin.com/in/bschles/)."
+- role: "Applied Scientist Intern"
+  org: "Amazon — Store Foundation AI"
+  url: "https://www.aboutamazon.com/news/retail/amazon-rufus"
+  logo: "amazon.svg"
+  dates: "Jun 2025 – Sep 2025"
+  note: "Multi-turn conversational agents and RL for the Rufus Shopping Assistant."
+- role: "Research Assistant"
+  org: "Human Computing Lab, ISCAS & XDiscovery Lab, Dartmouth"
+  dates: "May 2019 – Sep 2021"
+  note: "Microfluidics-based sensing and VR interaction, advised by Prof. Feng Tian, Prof. Teng Han, and Prof. Xing-Dong Yang."

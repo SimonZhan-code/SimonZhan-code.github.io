@@ -1,0 +1,14 @@
+# Education entries, newest first.
+# logo: filename in images/logos/ (omit to show an initial-letter tile instead)
+- role: "Ph.D. in Electrical and Computer Engineering"
+  org: "Northwestern University"
+  url: "https://www.northwestern.edu/"
+  logo: "northwestern.svg"
+  dates: "Sep 2023 – Present"
+  note: "Advised by [Qi Zhu](http://users.eecs.northwestern.edu/~qzhu/)."
+- role: "B.A. in Computer Science and Applied Mathematics"
+  org: "University of California, Berkeley"
+  url: "https://www.berkeley.edu/"
+  logo: "berkeley.svg"
+  dates: "Aug 2018 – Dec 2022"
+  note: "Advised by [Sanjit A. Seshia](http://people.eecs.berkeley.edu/~sseshia/)."

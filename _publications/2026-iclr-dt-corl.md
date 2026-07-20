@@ -3,9 +3,12 @@ title: "Belief-Based Offline Reinforcement Learning for Delay-Robust Policy Opti
 collection: publications
 category: conferences
 permalink: /publication/2026-iclr-dt-corl.md
-excerpt: 'This paper introduces Shop-R1, a novel reinforcement learning framework aimed at enhancing the reasoning ability of LLMs for simulation of real human behavior in online shopping environments through a two-stage approach with distinct reward signals.'
+excerpt: 'DT-CORL learns delay-robust policies from static, delay-free offline data by jointly optimizing a transformer-based belief model and a constrained policy objective.'
 date: 2026-01-23
 venue: 'ICLR 2026'
+badge: 'ICLR 2026'
+selected: true
+codeurl: 'https://github.com/SimonZhan-code/DT-CORL'
 authors: 'Simon Sinong Zhan, Qingyuan Wu, Philip Wang, Frank Yang, Xiangyu Shi, Chao Huang, Qi Zhu'
 paperurl: 'https://arxiv.org/pdf/2506.00131'
 citation: '@article{zhan2025adapting,

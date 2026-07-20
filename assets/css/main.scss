@@ -13,7 +13,6 @@
 
     "themes",
     "theme/default_light",
-    "theme/default_dark",
 
     "include/mixins",
     "vendor/susy/susy",
@@ -34,30 +33,11 @@
 
     "layout/page",
     "layout/archive",
-    "layout/sidebar",
     "layout/json_cv",
-    "layout/homepage",
 
     "vendor/font-awesome/fontawesome",
     "vendor/font-awesome/solid",
-    "vendor/font-awesome/brands"
+    "vendor/font-awesome/brands",
+
+    "layout/clean"
 ;
-
-/* Custom styling for publication authors */
-.publication-authors {
-    font-style: italic;
-    color: #6c757d;
-    margin-top: 0.5em;
-    margin-bottom: 0.5em;
-    font-size: 0.9em;
-    line-height: 1.4;
-}
-
-/* Remove underline/hover effects from non-clickable publication titles */
-.publication-title {
-    cursor: default;
-    
-    &:hover {
-        text-decoration: none;
-    }
-}

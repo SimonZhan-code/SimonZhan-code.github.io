@@ -1,0 +1,22 @@
+{% include base_path %}
+<div class="pub-card">
+  {% if include.pub.teaser %}
+  <div class="pub-card__teaser">
+    <a href="{{ base_path }}{{ include.pub.url }}"><img src="{{ base_path }}/images/pub-teasers/{{ include.pub.teaser }}" alt=""></a>
+  </div>
+  {% endif %}
+  <div class="pub-card__body">
+    <div class="pub-card__title"><a href="{{ base_path }}{{ include.pub.url }}">{{ include.pub.title }}</a></div>
+    <div class="pub-card__authors">{% include author-list.html authors=include.pub.authors %}</div>
+    <div class="pub-card__meta">
+      <span class="pub-card__venue-badge">{{ include.pub.badge | default: include.pub.venue }}</span>
+      {% if include.pub.award %}<span class="pub-card__award-badge">{{ include.pub.award }}</span>{% endif %}
+      {% if include.pub.paperurl %}<a class="pub-card__link" href="{{ include.pub.paperurl }}">Paper</a>{% endif %}
+      {% if include.pub.codeurl %}<a class="pub-card__link" href="{{ include.pub.codeurl }}">Code</a>{% endif %}
+      {% if include.pub.slidesurl %}<a class="pub-card__link" href="{{ include.pub.slidesurl }}">Slides</a>{% endif %}
+      {% if include.pub.projecturl %}<a class="pub-card__link" href="{{ include.pub.projecturl }}">Project</a>{% endif %}
+      {% if include.pub.videourl %}<a class="pub-card__link" href="{{ include.pub.videourl }}">Video</a>{% endif %}
+      {% if include.pub.posterurl %}<a class="pub-card__link" href="{{ include.pub.posterurl }}">Poster</a>{% endif %}
+    </div>
+  </div>
+</div>

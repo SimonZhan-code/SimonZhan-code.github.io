@@ -1,0 +1,23 @@
+{% include base_path %}
+{% assign entries = include.data | default: site.data.experience %}
+<div class="exp-list">
+  {% for item in entries %}
+  <div class="exp-item">
+    {% if item.logo %}
+      <img class="exp-logo" src="{{ base_path }}/images/logos/{{ item.logo }}" alt="{{ item.org }} logo">
+    {% else %}
+      <span class="exp-logo">{{ item.org | slice: 0 }}</span>
+    {% endif %}
+    <div class="exp-body">
+      <div class="exp-role">{{ item.role }}</div>
+      <div class="exp-org">
+        {% if item.url %}<a href="{{ item.url }}">{{ item.org }}</a>{% else %}{{ item.org }}{% endif %}
+      </div>
+      {% if item.note %}
+      <div class="exp-note">{{ item.note | markdownify | remove: '<p>' | remove: '</p>' }}</div>
+      {% endif %}
+    </div>
+    <div class="exp-dates">{{ item.dates }}</div>
+  </div>
+  {% endfor %}
+</div>

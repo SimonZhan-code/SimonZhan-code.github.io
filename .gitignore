@@ -1,0 +1,17 @@
+# Jekyll build output and caches
+_site/
+.sass-cache/
+.jekyll-cache/
+.jekyll-metadata
+
+# Bundler / gems
+vendor/
+.bundle/
+
+# Node
+node_modules/
+
+# Misc
+.claude/
+*.swp
+.DS_Store
