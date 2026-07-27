@@ -11,7 +11,7 @@ redirect_from:
 <div class="intro">
   <div class="intro__text">
     <h1>Sinong (Simon) Zhan</h1>
-    <p>I am a 3rd year PhD student in the ECE department at Northwestern University, advised by <a href="http://users.eecs.northwestern.edu/~qzhu/">Qi Zhu</a>. Before Northwestern, I did my undergrad in Applied Math and Computer Science at UC Berkeley, where I was advised by <a href="http://people.eecs.berkeley.edu/~sseshia/">Sanjit A. Seshia</a>. I am currently a Research Intern at <a href="https://research.google/">Google Research</a>, working with <a href="https://research.google/people/106155/">Maryam Karimzadehgan</a> and <a href="https://www.linkedin.com/in/bschles/">Benny Schlesinger</a>. Previously, I spent a great time as a research intern at <a href="https://www.aboutamazon.com/news/retail/amazon-rufus">Amazon SFAI</a>.</p>
+    <p>I am a 3rd year PhD student in the ECE department at Northwestern University, advised by <a href="http://users.eecs.northwestern.edu/~qzhu/">Qi Zhu</a>. Before Northwestern, I did my undergrad in Applied Math and Computer Science at UC Berkeley, where I was advised by <a href="http://people.eecs.berkeley.edu/~sseshia/">Sanjit A. Seshia</a>. I am currently a Research Intern at <a href="https://research.google/">Google Research</a>. Previously, I spent a great time as a research intern at <a href="https://www.aboutamazon.com/news/retail/amazon-rufus">Amazon SFAI</a>.</p>
     <div class="intro__icons">
       <a href="mailto:{{ site.author.email }}"><i class="fas fa-envelope"></i>Email</a>
       <a href="{{ site.author.googlescholar }}"><i class="fas fa-graduation-cap"></i>Google Scholar</a>
