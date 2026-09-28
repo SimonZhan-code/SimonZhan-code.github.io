@@ -1,19 +1,25 @@
 ---
 title: "SENTINEL: A Multi-Level Formal Framework for Safety Evaluation of Foundation Model-based Embodied Agents"
 collection: publications
-category: preprints
-permalink: /publication/2025-preprint-sentinel
+category: conferences
+permalink: /publication/2026-neurips-sentinel
+redirect_from:
+  - /publication/2025-preprint-sentinel
 excerpt: 'SENTINEL grounds practical safety requirements of foundation-model-based embodied agents in formal temporal logic semantics and evaluates them at the semantic, plan, and trajectory levels within a unified formal framework.'
-date: 2025-10-14
-venue: 'arXiv preprint (under review)'
-badge: 'arXiv'
+date: 2026-09-25
+venue: 'Conference on Neural Information Processing Systems (NeurIPS)'
+badge: 'NeurIPS 2026'
+selected: true
 authors: 'Simon Sinong Zhan, Yao Liu, Philip Wang, Zinan Wang, Qineng Wang, Yiyan Peng, Zhian Ruan, Xiangyu Shi, Xinyu Cao, Frank Yang, Kangrui Wang, Huajie Shao, Manling Li, Qi Zhu'
 paperurl: 'https://arxiv.org/abs/2510.12985'
-citation: '@article{zhan2025sentinel,
+codeurl: 'https://github.com/NU-IDEAS-Lab/SENTINEL'
+projecturl: 'https://nu-ideas-lab.github.io/SENTINEL/'
+citation: '@inproceedings{zhan2026sentinel,
   title={SENTINEL: A Multi-Level Formal Framework for Safety Evaluation of Foundation Model-based Embodied Agents},
   author={Zhan, Simon Sinong and Liu, Yao and Wang, Philip and Wang, Zinan and Wang, Qineng and Peng, Yiyan and Ruan, Zhian and Shi, Xiangyu and Cao, Xinyu and Yang, Frank and Wang, Kangrui and Shao, Huajie and Li, Manling and Zhu, Qi},
-  journal={arXiv preprint arXiv:2510.12985},
-  year={2025}
+  booktitle={Advances in Neural Information Processing Systems (NeurIPS)},
+  year={2026},
+  url={https://arxiv.org/abs/2510.12985}
 }'
 ---
 
