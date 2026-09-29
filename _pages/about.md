@@ -52,6 +52,6 @@ My research lies at the intersection of reinforcement learning, formal methods, 
 
 ## Academic Service
 
-- **Conference reviewer:** NeurIPS, ICML, ICLR, AAAI, CVPR, ECCV, L4DC, ASP-DAC, ECC
+- **Conference reviewer:** NeurIPS, ICML, ICLR, AAAI, CVPR, ECCV, ICRA, L4DC, ASP-DAC, ECC
 - **Journal reviewer:** Machine Learning (Springer), IEEE Internet of Things Journal
 - **Program committee:** ICCPS Artifact Evaluation Committee
